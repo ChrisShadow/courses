@@ -49,7 +49,6 @@ class Cargo
     private RelacionVAbajo $relacionVAbajo;
     private RelacionHorizontal $relacionHorizontal;
     private ListaActividad $listaActividad;
-    private LugarTrabajo $lugarTrabajo; // llevar a lista horario como atributo
     private ListaHorario $listaHorario;
     private static $tipoFuncionario = [];
     private static int $indicetipoFuncionario;
@@ -85,7 +84,7 @@ class Cargo
     //with Sign
     function __construct(
         string $nombre, RelacionVArriba $relacionVArriba, RelacionVAbajo $relacionVAbajo, RelacionHorizontal $relacionHorizontal,
-        ListaActividad $listaActividad, LugarTrabajo $lugarTrabajo, ListaHorario $listaHorario, int $indicetipoFuncionario, float $pagoFuncionario,
+        ListaActividad $listaActividad, ListaHorario $listaHorario, int $indicetipoFuncionario, float $pagoFuncionario,
         Divisa $divisa, float $porcentajeComision, int $indicePeriodoPago
     ) {
         //echo "Primera instancia creada";
@@ -94,7 +93,6 @@ class Cargo
         $this->relacionVAbajo = $relacionVAbajo;
         $this->relacionHorizontal = $relacionHorizontal;
         $this->listaActividad = $listaActividad;
-        $this->lugarTrabajo = $lugarTrabajo;
         $this->listaHorario = $listaHorario;
         self::$tipoFuncionario = (object) [0 => "Asalariado", 1 => "Tercerizado"];
         self::$indicetipoFuncionario = $indicetipoFuncionario;
@@ -127,10 +125,7 @@ class Cargo
     {
         return $this->listaActividad->show_data();
     }
-    public function get_lugarTrabajo()
-    {
-        return $this->lugarTrabajo->show_data();
-    }
+   
     public function get_listaHorario()
     {
         return $this->listaHorario->show_data();
@@ -188,10 +183,7 @@ class Cargo
     {
         $this->$listaActividad = $listaActividad;
     }
-    public function set_lugarTrabajo($lugarTrabajo)
-    {
-        $this->lugarTrabajo = $lugarTrabajo;
-    }
+    
     public function set_listaHorario($listaHorario)
     {
         $this->listaHorario = $listaHorario;
