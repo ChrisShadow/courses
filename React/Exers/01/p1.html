@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <h1>Hey React!</h1>
+        <!-- Div Father -->
+        <div id="prime">
+
+        </div>
+        <script type="text/babel">
+            function ViewData(){
+                return(
+                    <div>
+                        <p>Name:</p>
+                        <input type="text" name="name" />
+                        <br/>
+                        <p>Last Name:</p>
+                        <input type="text" name="lname" />
+                        <br/>
+                        <ViewDirect />
+                    </div>
+                );
+            }
+
+            /* class ViewData extends React.Component{
+                render(){
+                    return(
+                        <div>
+                            <p>Name:</p>
+                            <input type="text" name="name" />
+                            <br/>
+                            <p>Last Name:</p>
+                            <input type="text" name="lname" />
+                            <br/>
+                            <ViewDirect />
+                        </div>
+                    );
+                } 
+            } */
+
+            const ini=(n,n1,n2)=>{
+                return `${n[0]}.${n1[0]}.${n2[0]}.`
+            }
+
+            function ViewDirect(){
+                const street="Pr. Mario Mariotti";
+                const name="Javier Héctor";
+                const lName="Echeverría Barrios";
+                const v=false;
+                const number= 5;
+                const array=[1,8,2];
+
+                return(
+                    <React.Fragment>
+                        <p>Adress: </p>
+                        <p>{street}</p>
+                        <p>Name: </p>
+                        <p>{name}</p>
+                        <p>Last Name: </p>
+                        <p>{lName.toLowerCase()}</p>
+                        <p>{1+3}</p>
+                        <p>{v ? "Sí" : "No"}</p>
+                        <p>{number + "90"}</p>
+                        <p>{number + parseInt("90")}</p>
+                        <p>{array}</p>
+                        <p>{ini ("Cris","Bene","Rolón").toUpperCase()}</p>
+                    </React.Fragment>
+                )
+            }
+
+            //Declarative JXS mode,Div son, Containers, fragments
+            /*const elem= <> 
+                            <h2>React JXS' element</h2>
+                            <h3>Bye! 👀👁</h3>
+                        </>;*/
+            //Root
+            //Without JSX
+            //const elem=React.createElement('h2',{},'This is another Example yet without JSX');
+            const container=ReactDOM.createRoot(document.getElementById('prime'));
+            container.render(<ViewData />);
+        </script>
+        
+    </body>
+</html>
