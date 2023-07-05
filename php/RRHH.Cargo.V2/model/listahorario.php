@@ -11,7 +11,7 @@ class ListaHorario
 {
     #region att
     private static $MapaHorario = (object) []; //[{Lugar trabajo:Horario}]
-    private static $ArrayHorario = array(); //posicion y el objeto instanciado horario
+    private static $ArrayHorario = array(); //posición y el objeto instanciado horario
     private LugarTrabajo $lugarTrabajo;
     #endregion
 
