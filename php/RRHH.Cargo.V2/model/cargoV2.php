@@ -1,7 +1,6 @@
 <?php
 namespace Model;
 
-use Model\LugarTrabajo;
 use Model\RelacionVArriba;
 use Model\RelacionVAbajo;
 use Model\RelacionHorizontal;
