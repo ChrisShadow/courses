@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Modelos&apos; to &apos;P_E_Modelo&apos;&#x0D;&#x0A;- Original project: &apos;Avanzado01_RepasoApp&apos;&#x0D;&#x0A;- Original element: &apos;Avanzado01_RepasoApp/src/Modelos&apos;&#x0D;&#x0A;- Renamed element: &apos;Avanzado01_RepasoApp/src/P_E_Modelo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Modelos&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Modelos" name="P_E_Modelo" qualified="false" references="true" stamp="1647033988238" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="workingset_selection_history">
+		<item value="JAVA2"/>
+	</list>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.Java"/>
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\TP\Final\10072022_EntregaFinal_Bnd.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\TP\3\30062022_TerceraEntrega.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\Tercer parcial\ChrisRolon_TercerParcial.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\TP\3\09062022_TerceraEntrega.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\11\ChrisRolon_Tarea7_Clase6.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\TP\2\03062022_SegundaEntrega\Grupo3_Restaurante_SegundaEntrega.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\9\ChrisRolon_Tarea6_Clase6.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\9\Task6th_Calculator.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\Segundo Parcial\ChrisRolon_SegundoParcial.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\8\ChrisRolon_Tarea5_Clase6.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\6\ChrisRolon_Tarea4_Clase6.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\Primer Parcial\ChrisRolon_PrimerParcial.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\4\ChrisRolon_Tarea3_Clase4.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\3\ChrisRolon_Tarea2_Clase3.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Sexto semestre\JAVA II\1\Tarea\ChrisRolon_Tarea_Clase1.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Quinto Semestre\Intro JAVA\Final\2\ExamenFinal_ChrisRolon.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Quinto Semestre\Intro JAVA\14\Tarea\TareaClase14_ChrisRolon.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Quinto Semestre\EDyA\Proyecto\Propuesta_V3_TF.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Quinto Semestre\Intro JAVA\Proyecto\Practico\ChrisRolon_Solucion_ProyectoFinal.zip"/>
+			<item value="C:\Users\Marco\Desktop\Chris\E-Campu UAA\Quinto Semestre\Intro JAVA\13\tareas\TareaClase13_ChrisRolon.zip"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_WIDTH" value="450"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_HEIGHT" value="506"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textEntries">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+</section>

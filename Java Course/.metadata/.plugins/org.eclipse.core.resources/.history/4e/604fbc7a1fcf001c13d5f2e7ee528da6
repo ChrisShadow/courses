@@ -1,0 +1,10 @@
+package Client;
+
+public class ClientOp {
+	private Socket socketCliente = null;
+	private BufferedReader entrada = null;
+	private DataInputStream entradaDatos = null;
+	private DataOutputStream salidaDatos = null;
+	private int numeroPuerto;
+	private String ipMaquina;
+}

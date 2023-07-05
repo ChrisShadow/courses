@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1627436770170_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1627436770200_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1647634703363_3" label="Cursos" name="Cursos">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/22_Inheritance" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/18_Constructors" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/16_MethodParameters" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/21_ToStringMethod" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/04_WhileLoops" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/19_Static" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/11_Strings&apos;Arrays" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/15_Getters&amp;ReturnValues" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/13_ClassesObjects&amp;Methods" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/07_GettingUserInput" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/09_Switch" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/06_If" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/10_Arrays" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/17_Setters&amp;This" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/01_HelloProgram_DataTypes" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/12_Multi-DimensionalArrays" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/05_ForLoops" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/08_DoWhile" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/20_StringBuilder&amp;Formatting" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/02_StringsWorkingWithText" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1647634736586_4" label="JAVA2" name="JAVA2">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Avanzado06_Tarea5_Clase8_C&amp;S" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/UAA_2022_06_ChrisRolon" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Avanzado08Tarea7ChrisRolon" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SwingFirst" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Avanzado07_Tarea6_ChrisRolon" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Avanzado01_RepasoApp" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/UAA_2022_04_ChrisRolon" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Avanzado04_Tarea3_Clase4" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Servers" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Avanzado02_PracticeCollections_Clase2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/UAA_2022_05_ChrisRolon" type="4"/>
+<item elementID="=ProjectRest" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Avanzado.Spark" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Avanzado03_Tarea2_Clase3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Avanzado05_Tarea4_Clase6" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1647634796330_5" label="JAVA1" name="JAVA1">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase20_GrupoTres_Vacunacion" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase11_Bici" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase5_TAREAJAVA" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase14_Hospedaje" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase6_ChrisRolon" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase10_MotoCicleta" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/C_SegundoParcial" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/C_TercerParcial" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase9_ReservaHabitacion" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/000PruebaSql" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase12_AlquilerBici" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase16_ExamenFinal" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase7_ptoCajaAhorro" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase8_TareaArreglo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase13_Equipo_Jugador_Psql" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Clase15_Practica_EF" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1647634816122_6" label="EDA" name="EDA">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tarea3_chrisrolon" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tarea6_ProyectoFinal_Pila" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tarea5_Colas" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tarea2_chrisrolon" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Tarea6_ProyectoFinal_PilaA_v2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tarea4_Pilas" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1627436772948_2" label="Window Working Set" name="Aggregate for window 1627436772948"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1648392423233_9" label="Multiple Working Sets" name="Aggregate:Cursos:EDA:JAVA1:JAVA2:Java Main Sources:Java Test Sources:">
+<workingSet IMemento.internal.id="Cursos"/>
+<workingSet IMemento.internal.id="EDA"/>
+<workingSet IMemento.internal.id="JAVA1"/>
+<workingSet IMemento.internal.id="JAVA2"/>
+<workingSet IMemento.internal.id="Java Main Sources"/>
+<workingSet IMemento.internal.id="Java Test Sources"/>
+</workingSet>
+<mruList name="JAVA2"/>
+</workingSetManager>

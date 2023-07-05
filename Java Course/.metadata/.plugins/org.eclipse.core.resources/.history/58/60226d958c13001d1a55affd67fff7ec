@@ -1,0 +1,107 @@
+package modelDB;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class OperacionUserDB implements UsuarioDAO{
+
+	public ConexionDB cDB = null;
+	public Connection db = null;
+
+	// Constructor
+	public OperacionUserDB() throws SQLException {
+		cDB = new ConexionDB();
+	}
+
+
+
+	@Override
+	public List<Usuario> ReadRow() throws SQLException {
+		db = cDB.conectarBD();
+		Usuario usRow = null;
+		List<Usuario> listaUser = new ArrayList<Usuario>();
+		/*
+		 * Select "Usuario"."UsuarioID","Usuario"."Nombre","Usuario"."Email","Rol"."Descripcion" as "Rol", "Usuario"."Activo"
+from "Usuario"
+Inner Join "Rol"
+On "Rol"."RolID"="Usuario"."RolID"*/
+		
+		String sql = "SELECT \"Usuario\".\"UsuarioID\",\"Usuario\".\"Nombre\",\"Usuario\".\"Email\",\"Rol\".\"Descripcion\" as \"Rol\",\"Usuario\".\"Activo\""
+				+ "FROM public.\"Usuario\" INNER JOIN \"Rol\" ON \"Rol\".\"RolID\"=\"Usuario\".\"RolID\"";
+		PreparedStatement st = db.prepareStatement(sql);
+		ResultSet rs = st.executeQuery();
+
+			while (rs.next()) {
+				usRow = new Usuario();
+				usRow.setUsuarioID(rs.getInt("UsuarioID"));
+				usRow.setNombre(rs.getString("Nombre"));
+				usRow.setEmail(rs.getString("Email"));
+				//usRow.setContrasenha(rs.getString("Contrasenha"));
+				usRow.setActivo(rs.getString("Activo"));
+				usRow.setRolID(rs.getInt("RolID"));
+				listaUser.add(usRow);
+			}
+		st.close();
+        db.close();
+
+		return listaUser;
+	}
+	
+	
+	@Override
+	public Usuario ReadRowForName(String name) throws SQLException {
+		db = cDB.conectarBD();
+		Usuario useRow = null;
+		String sql = "SELECT * FROM public.\"Usuario\" WHERE \"Nombre\"='" + name+"'";
+		PreparedStatement st = db.prepareStatement(sql);
+		ResultSet rs = st.executeQuery();
+
+			while (rs.next()) {
+				useRow = new Usuario();
+				useRow.setUsuarioID(rs.getInt("UsuarioID"));
+				useRow.setNombre(rs.getString("Nombre"));
+				useRow.setEmail(rs.getString("Email"));
+				useRow.setContrasenha(rs.getString("Contrasenha"));
+				useRow.setActivo(rs.getString("Activo"));
+				useRow.setRolID(rs.getInt("RolID"));
+				useRow.setActivo(rs.getString("Activo"));
+			}
+		st.close();
+        db.close();
+
+		return useRow;
+	}
+
+
+
+	@Override
+	public boolean CreateRow(Usuario user) throws SQLException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+
+	@Override
+	public boolean UpdateRow(Usuario user) throws SQLException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+
+	@Override
+	public boolean DeleteRow(Usuario user) throws SQLException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+
+
+}

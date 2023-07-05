@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;com.Spark&apos; to &apos;Avanzadocom.Spark&apos;" description="Rename resource &apos;com.Spark&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/com.Spark" name="Avanzadocom.Spark" stamp="1647462518885" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Avanzadocom.Spark&apos; to &apos;Avanzado.Spark&apos;" description="Rename resource &apos;Avanzadocom.Spark&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Avanzadocom.Spark" name="Avanzado.Spark" stamp="1647462578210" updateReferences="true"/>
+</session>

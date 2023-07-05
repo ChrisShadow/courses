@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Avanzado.Spark/src/main/java/HelloWorld&apos; to &apos;HelloWorld.java&apos;" description="Rename resource &apos;HelloWorld&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/HelloWorld" name="HelloWorld.java" stamp="1647463914108" updateReferences="true"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;00PsqlC&apos; to &apos;Clase13_Equipo_Jugador_Psql&apos;" description="Rename resource &apos;00PsqlC&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/00PsqlC" name="Clase13_Equipo_Jugador_Psql" stamp="1637360081334" updateReferences="true"/>
+</session>

@@ -1,0 +1,149 @@
+package Client;
+
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.ConnectException;
+import java.net.Socket;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.stream.Stream;
+
+public class ClientOp {
+	private Socket socketCli = null;
+	private BufferedReader entrada = null;
+	private DataInputStream entradaDatos = null;
+	private DataOutputStream salidaDatos = null;
+	private int nuroPuerto;
+	private String ipMach;
+	
+	
+	public int getNuroPuerto() {
+		return nuroPuerto;
+	}
+	public void setNuroPuerto(int nuroPuerto) {
+		this.nuroPuerto = nuroPuerto;
+	}
+	public String getIpMach() {
+		return ipMach;
+	}
+	public void setIpMach(String ipMach) {
+		this.ipMach = ipMach;
+	}
+	
+	public ClientOp(int nuroPuerto, String ipMach) {
+		this.nuroPuerto = nuroPuerto;
+		this.ipMach = ipMach;
+		this.conexion();
+	}
+	
+	private void conexion() {
+		try {
+			socketCli = new Socket(this.getIpMach(), this.getNuroPuerto());
+
+			Thread subProceso = new Thread(new Runnable() {
+				@Override
+				public void run() {
+					ingresarDatos();
+				}
+			});
+
+			subProceso.start();
+
+		} catch (ConnectException con) {
+			Logger.getLogger(ClientOp.class.getName()).log(
+					Level.WARNING, "Por favor, verifique que el servidor este levantado en la maquina con IP: "
+							+ this.getIpMach() + " y escuche el PUERTO: " + this.getNuroPuerto(),
+					con.getMessage());
+		} catch (Exception ex) {
+			Logger.getLogger(ClientOp.class.getName()).log(Level.SEVERE, null, ex);
+		}
+	}
+	
+	
+	private synchronized void ingresarDatos() {
+		boolean repetirIteracion = true, errorIngresarDatos = true;
+		while (repetirIteracion) {
+
+			try {
+				entrada = new BufferedReader(new InputStreamReader(System.in));
+				int opcion = 0;
+				while (opcion != 4) {
+					System.out.println("------------------------------------");
+					System.out.println("Opciones disponibles");
+					System.out.println("------------------------------------");
+					System.out.println("1- Agregar nuevo profesor");
+					System.out.println("2- Consultar materias de profesor por CI");
+					System.out.println("3- Consultar materias por facultad");
+					System.out.println("4- Salir");
+					System.out.println("------------------------------------");
+					System.out.println("Seleccione una opcion:");
+
+					do {
+						try {
+							opcion = Integer.parseInt(entrada.readLine());
+							errorIngresarDatos = false;
+						} catch (NumberFormatException num) {
+							System.out.println("\nIngrese una opcion de 1 a 4\n");
+							errorIngresarDatos = true;
+						}
+					} while (errorIngresarDatos);
+
+					if (opcion < 1 || opcion > 4) {
+						System.out.println("\nIngrese una opcion de 1 a 4\n");
+						continue;
+					}
+
+					if (opcion == 4) {
+						repetirIteracion = false;
+						continue;
+					}
+
+					if (opcion >= 1 && opcion <= 3) {
+						switch (opcion) {
+						case 1:
+							agregarProfesor(opcion);
+							break;
+						case 2:
+							consultarMatProfPorCi(opcion);
+							break;
+						case 3:
+							consultarMatPorFacu(opcion);
+							break;
+						}
+					}
+
+					escucharDatos(socketCli/*, opcion*/);
+					Thread.sleep(1000);
+				}
+
+			} catch (Exception ex) {
+				Logger.getLogger(ClientOp.class.getName()).log(Level.SEVERE, null, ex);
+
+			}
+
+		}
+		this.cerrarTodo();
+	}
+	
+	
+	private boolean escucharDatos(Socket socket/*, int opcion*/) throws IOException {
+			
+				InputStream inputStream = null;
+				String cadenaRecibida = null;
+				inputStream = socket.getInputStream();
+				entradaDatos = new DataInputStream(inputStream);
+				cadenaRecibida = entradaDatos.readUTF();
+				
+				System.out.println(cadenaRecibida);
+	
+	
+				return false;
+		}
+	
+	
+}

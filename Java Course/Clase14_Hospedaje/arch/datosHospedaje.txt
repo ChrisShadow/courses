@@ -1,0 +1,8 @@
+INSERCION & Identificador del hospedaje: 0 * Nro de documento: 6695011 * Cantidad de días: 5 * Nro piso: 8 * Nro habitación: 12 * País: PARAGUAY * Monto total: 400000 * Monto cancelado: 4000 * Estado: INACTIVO
+INSERCION & Identificador del hospedaje: 0 * Nro de documento: 3.249.395 * Cantidad de días: 18 * Nro piso: 4 * Nro habitación: 8 * País: ARGENTINA * Monto total: 400000 * Monto cancelado: 40000 * Estado: ACTIVO
+ACTUALIZACION & Identificador del hospedaje: 2 * Nro de documento: 3.249.395 * Cantidad de días: 500000 * Nro piso: 4 * Nro habitación: 8 * País: ARGENTINA * Monto total: 15 * Monto cancelado: 12 * Estado: INACTIVO
+INSERCION & Identificador del hospedaje: 0 * Nro de documento: 5467889 * Cantidad de días: 5 * Nro piso: 12 * Nro habitación: 17 * País: CHILE * Monto total: 1247878 * Monto cancelado: 12345 * Estado: ACTIVO
+ACTUALIZACION & Identificador del hospedaje: 3 * Nro de documento: 5467889 * Cantidad de días: 17 * Nro piso: 12 * Nro habitación: 17 * País: CHILE * Monto total: 84785 * Monto cancelado: 1245 * Estado: INACTIVO
+INSERCION & Identificador del hospedaje: 0 * Nro de documento: 6454 * Cantidad de días: 47 * Nro piso: 87 * Nro habitación: 21 * País: BRASIL * Monto total: 4578787 * Monto cancelado: 2132145 * Estado: ACTIVO
+INSERCION & Identificador del hospedaje: 0 * Nro de documento: 35656 * Cantidad de días: 78 * Nro piso: 56 * Nro habitación: 5665 * País: CHILE * Monto total: 4545 * Monto cancelado: 5666 * Estado: INACTIVO
+ACTUALIZACION & Identificador del hospedaje: 5 * Nro de documento: 35656 * Cantidad de días: 124 * Nro piso: 56 * Nro habitación: 5665 * País: CHILE * Monto total: 87 * Monto cancelado: 325 * Estado: INACTIVO
