@@ -1,0 +1,236 @@
+/* Selector de tipo - Etiqueta HTML
+h1{
+    color: lightcoral;
+}*/
+
+/* Selector de clase - atributo class*/
+ /* Selector de id -atributo id
+
+ #primero{
+    color:tomato
+ }*/
+
+ /* Display: -inline -Block - inline-block */
+/*Flexbox: contenedores y contenidos
+Displya Flex - Justify-content
+box-sizing: border-box para neutralizar padding al width and height */
+
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+
+body{
+    font-family: 'Rubik Gemstones', cursive;
+    background-color: brown;
+}
+
+
+.titulo{
+    color: azure;
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+.subtitle{
+    color: gainsboro;
+    font-size: 25px;
+}
+
+#select-pet{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+.cards, .attCards{
+    display: flex;
+    gap: 10px;
+}
+
+.mok-target{
+    width: 200px;
+    height: 230px;
+    background-color: darkcyan;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 5px solid rgb(15, 171, 171);
+    text-align: center;
+    border-radius: 20px;
+}
+#range{
+font-style: unset;
+}
+
+.mok-target img{
+    width: 100px;
+    height: 100px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color:mediumaquamarine;
+}
+
+#pet{
+    width: 480px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid blanchedalmond;
+    margin-top: 25px;
+    font-family: 'Rubik Gemstones', cursive;
+    font-size: 20px;
+}
+#pet:hover{
+    color: antiquewhite;
+}
+
+#view-map{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#view-map h1{
+    font-weight: 900;
+    color: azure;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#map{
+    border: 2px solid whitesmoke;
+    margin-bottom: 20px;
+}
+
+.motionsB{
+    display: flex;
+}
+.motionsB, button{
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid blanchedalmond;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.motionsB, img{
+    width: 150px;
+    height: 50px;
+}
+
+.motionsB, button:hover{
+    color: antiquewhite;
+    background-color: rgb(218, 59, 59);
+}
+
+.cards p:hover{
+    color: antiquewhite;
+}
+
+#select-attack{  
+    flex-direction: column;
+    align-items: center;
+}
+.att-butt{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid blanchedalmond;
+    margin-right: 15px;
+    font-family: 'Rubik Gemstones', cursive;
+    font-size: 20px;
+}
+.att-butt:hover{
+    color: antiquewhite;
+}
+#notifications{
+    width: 220px;
+    padding: 20px;
+    background: azure;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    flex-direction: column;
+}
+#reset{
+    border: transparent;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#reset:hover{
+    background-color: darkslategrey;
+    color: crimson;
+}
+
+.atts{
+    display: grid;
+    grid-template-columns: 150px 50px 150px;
+    justify-items: center;
+}
+.vs p{
+    color: antiquewhite;
+    font-size: 30px;
+}
+
+
+#player-pet, #enemy-pet{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:beige;
+
+
+}
+
+
+
+/* queries - responsive */
+@media(max-width: 690px){
+    .titulo, .subtitle{
+        text-align: center;
+    }
+    .cards, .attCards{
+        flex-direction: column;
+    }
+    #pet{width: 280px;margin-bottom: 1px;}
+    
+}
+@media(max-width: 1110px){
+    .titulo, .subtitle{
+        text-align: center;
+    }
+    #pet{width: 280px; margin-bottom: 1px;}
+    .cards, .attCards{
+        flex-direction: column;
+    }
+}
+@media(max-width: 865px){
+
+    .motionsB, button{
+        display: list-item;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid blanchedalmond;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    .motionsB, button:hover{
+        color: antiquewhite;
+        background-color: rgb(218, 59, 59);
+    }
+
+    .motionsB, img{
+        width: 150px;
+        height: 50px;
+    }
+}
+
+

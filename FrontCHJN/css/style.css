@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    background: aliceblue;
+    margin: 0;
+}
+
+.flex-container {
+    background-color: cadetblue;
+    margin-top: 10px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.flex-item {
+    flex-basis: 23%;
+}
