@@ -6,7 +6,7 @@ use Model\LugarTrabajo;
 class ListaHorario
 {
     #region att
-    private LugarTrabajo $lugarTrabajo; // llevar a lista horario como atributo
+    private LugarTrabajo $lugarTrabajo;
     #endregion
 
     #region const

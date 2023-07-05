@@ -125,7 +125,7 @@ class Cargo
     {
         return $this->listaActividad->show_data();
     }
-   
+
     public function get_listaHorario()
     {
         return $this->listaHorario->show_data();
@@ -183,7 +183,7 @@ class Cargo
     {
         $this->$listaActividad = $listaActividad;
     }
-    
+
     public function set_listaHorario($listaHorario)
     {
         $this->listaHorario = $listaHorario;
@@ -225,8 +225,7 @@ class Cargo
     {
         $response = "Cargo: [Nombre: " . self::get_nombre() /**$this->get_nombre() */. ", Relación veritical arriba: " . $this->get_relacionVArriba() . ", 
             Relación veritical abajo: " . $this->get_relacionVAbajo() . ", Relación horizontal: " . $this->get_relacionHorizontal()
-            . ", Lista de funciones: " . $this->get_listaActividad() . ", Lugar de trabajo: " . $this->get_lugarTrabajo()
-            . ", Lita de horario: " . $this->get_listaHorario() . ", Tipo de funcionario: " . self::get_tipoFuncionario() /**$this->get_tipoFuncionario() */
+            . ", Lista de funciones: " . $this->get_listaActividad() . ", Lita de horario: " . $this->get_listaHorario() . ", Tipo de funcionario: " . self::get_tipoFuncionario() /**$this->get_tipoFuncionario() */
             . (self::$indicetipoFuncionario /**$this->indicetipoFuncionario*/== 0) ? ", Salario: " . self::get_pagoFuncionario() /**$this->get_pagoFuncionario() */: ", Viático: " . self::get_pagoFuncionario() /**$this->get_pagoFuncionario() */
             . ", Comisión: " . self::get_porcentajeComision() /**$this->get_porcentajeComision() */. ", Moneda: " . $this->get_divisa() . ", Período pago: " . self::get_periodoPago() /**$this->get_periodoPago() */. "]";
         return json_encode($response);
