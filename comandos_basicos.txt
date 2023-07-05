@@ -3,6 +3,12 @@ indentificadore básicos:
 1-git config --global user.name
 2-git config --global user.email
 -------------------------------------------------------------------------------------------------------------------------------------
+Linux
+to list item in a directory: ls
+to move another directory forward: cd directname
+to move another directory backward: cd ..
+to create a folder/directory: mkdir namefolder/directory
+-------------------------------------------------------------------------------------------------------------------------------------
 Git hub: servicio web de Git, front end.  
 generador de llave ssh, protocolo de comunicación entre front (git hub) y back-end(git):
 1-ssh-keygeb(or just until here) -t rsa -b 4096 -C "email" : chrisz (en git), no compartir
