@@ -1,0 +1,15 @@
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Array\Array\obj\Debug\ArrayExam.csprojAssemblyReference.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Array\Array\obj\Debug\ArrayExam.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Array\Array\obj\Debug\Array.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Array\Array\obj\Debug\Array.pdb
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Array\Array\bin\Debug\Array.exe.config
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Array\Array\bin\Debug\Array.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Array\Array\bin\Debug\Array.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Array\Array\bin\Debug\Array.exe.config
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Array\Array\bin\Debug\Array.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Array\Array\bin\Debug\Array.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Array\Array\obj\Debug\ArrayExam.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Array\Array\obj\Debug\ArrayExam.csproj.SuggestedBindingRedirects.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Array\Array\obj\Debug\ArrayExam.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Array\Array\obj\Debug\Array.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Array\Array\obj\Debug\Array.pdb

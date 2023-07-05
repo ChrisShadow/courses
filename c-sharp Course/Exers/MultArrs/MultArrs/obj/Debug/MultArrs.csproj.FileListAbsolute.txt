@@ -1,0 +1,15 @@
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\MultArrs\MultArrs\bin\Debug\MultArrs.exe.config
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\MultArrs\MultArrs\bin\Debug\MultArrs.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\MultArrs\MultArrs\bin\Debug\MultArrs.pdb
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\MultArrs\MultArrs\obj\Debug\MultArrs.csprojAssemblyReference.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\MultArrs\MultArrs\obj\Debug\MultArrs.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\MultArrs\MultArrs\obj\Debug\MultArrs.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\MultArrs\MultArrs\obj\Debug\MultArrs.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\MultArrs\MultArrs\bin\Debug\MultArrs.exe.config
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\MultArrs\MultArrs\bin\Debug\MultArrs.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\MultArrs\MultArrs\bin\Debug\MultArrs.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\MultArrs\MultArrs\obj\Debug\MultArrs.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\MultArrs\MultArrs\obj\Debug\MultArrs.csproj.SuggestedBindingRedirects.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\MultArrs\MultArrs\obj\Debug\MultArrs.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\MultArrs\MultArrs\obj\Debug\MultArrs.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\MultArrs\MultArrs\obj\Debug\MultArrs.pdb

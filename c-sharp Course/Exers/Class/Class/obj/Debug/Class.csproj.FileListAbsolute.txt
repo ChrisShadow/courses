@@ -1,0 +1,7 @@
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Class\Class\bin\Debug\Class.exe.config
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Class\Class\bin\Debug\Class.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Class\Class\bin\Debug\Class.pdb
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Class\Class\obj\Debug\Class.csprojAssemblyReference.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Class\Class\obj\Debug\Class.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Class\Class\obj\Debug\Class.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Class\Class\obj\Debug\Class.pdb

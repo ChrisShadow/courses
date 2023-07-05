@@ -1,0 +1,15 @@
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\bin\Debug\TablaMultiplicar.exe.config
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\bin\Debug\TablaMultiplicar.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\bin\Debug\TablaMultiplicar.pdb
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\obj\Debug\TablaMultiplicar.csprojAssemblyReference.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\obj\Debug\TablaMultiplicar.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\obj\Debug\TablaMultiplicar.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\obj\Debug\TablaMultiplicar.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\bin\Debug\TablaMultiplicar.exe.config
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\bin\Debug\TablaMultiplicar.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\bin\Debug\TablaMultiplicar.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\obj\Debug\TablaMultiplicar.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\obj\Debug\TablaMultiplicar.csproj.SuggestedBindingRedirects.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\obj\Debug\TablaMultiplicar.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\obj\Debug\TablaMultiplicar.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\TablaMultiplicar\TablaMultiplicar\obj\Debug\TablaMultiplicar.pdb

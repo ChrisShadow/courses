@@ -1,0 +1,15 @@
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\bin\Debug\Polimorfismo.exe.config
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\bin\Debug\Polimorfismo.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\bin\Debug\Polimorfismo.pdb
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\obj\Debug\Polimorfismo.csprojAssemblyReference.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\obj\Debug\Polimorfismo.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\obj\Debug\Polimorfismo.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\obj\Debug\Polimorfismo.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\bin\Debug\Polimorfismo.exe.config
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\bin\Debug\Polimorfismo.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\bin\Debug\Polimorfismo.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\obj\Debug\Polimorfismo.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\obj\Debug\Polimorfismo.csproj.SuggestedBindingRedirects.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\obj\Debug\Polimorfismo.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\obj\Debug\Polimorfismo.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Polimorfismo\Polimorfismo\obj\Debug\Polimorfismo.pdb

@@ -1,0 +1,15 @@
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\obj\Debug\Herencia.csprojAssemblyReference.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\obj\Debug\Herencia.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\obj\Debug\Herencia.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\obj\Debug\Herencia.csproj.SuggestedBindingRedirects.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\obj\Debug\Herencia.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb

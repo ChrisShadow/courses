@@ -1,0 +1,15 @@
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Estructuras\Estructuras\bin\Debug\Estructuras.exe.config
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Estructuras\Estructuras\bin\Debug\Estructuras.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Estructuras\Estructuras\bin\Debug\Estructuras.pdb
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Estructuras\Estructuras\obj\Debug\Estructuras.csprojAssemblyReference.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Estructuras\Estructuras\obj\Debug\Estructuras.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Estructuras\Estructuras\obj\Debug\Estructuras.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\Estructuras\Estructuras\obj\Debug\Estructuras.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Estructuras\Estructuras\bin\Debug\Estructuras.exe.config
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Estructuras\Estructuras\bin\Debug\Estructuras.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Estructuras\Estructuras\bin\Debug\Estructuras.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Estructuras\Estructuras\obj\Debug\Estructuras.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Estructuras\Estructuras\obj\Debug\Estructuras.csproj.SuggestedBindingRedirects.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Estructuras\Estructuras\obj\Debug\Estructuras.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Estructuras\Estructuras\obj\Debug\Estructuras.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\Estructuras\Estructuras\obj\Debug\Estructuras.pdb

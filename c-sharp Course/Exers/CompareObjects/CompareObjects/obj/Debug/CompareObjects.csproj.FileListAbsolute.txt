@@ -1,0 +1,15 @@
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\bin\Debug\CompareObjects.exe.config
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\bin\Debug\CompareObjects.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\bin\Debug\CompareObjects.pdb
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\obj\Debug\CompareObjects.csprojAssemblyReference.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\obj\Debug\CompareObjects.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\obj\Debug\CompareObjects.exe
+C:\Users\Marco\Desktop\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\obj\Debug\CompareObjects.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\bin\Debug\CompareObjects.exe.config
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\bin\Debug\CompareObjects.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\bin\Debug\CompareObjects.pdb
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\obj\Debug\CompareObjects.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\obj\Debug\CompareObjects.csproj.SuggestedBindingRedirects.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\obj\Debug\CompareObjects.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\obj\Debug\CompareObjects.exe
+C:\Users\chris\Desktop\Old\Chris\c-sharp Course\Exers\CompareObjects\CompareObjects\obj\Debug\CompareObjects.pdb
