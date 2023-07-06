@@ -38,3 +38,23 @@ En git:
 15-git branch nombre(crear); 
 16-git checkout nombre(luego ir al); 
 17-git check out -B nombre(crear e ir a la vez)
+-------------------------------------------------------------------------------------------------------------------------------------
+Pull request: unification of branches contents into the main with a previous check/review. So, in github with open pull request button, the 
+sequence of actions in order to make suggestions/improvements/corrections, it defines the future online commitments to finally merging them 
+after they were accepted. 
+Obs1: After creating a pull request, if emerges a notification about conflicts in one branch or another, it means that there was one or more  files, same ones,  which were modified after the splittig 
+from the main branch. To resolve this, pushing the last changes in the main branch to the particular one, with checkout , fetch and pull. 
+Whit this steps , whole branches are unified once again.
+18- git merge branch branch
+Obs2: After attempting the conflict issue, Visual Code allows it to be resolved natively with current/incoming/both. Without VC, only by hand one by one with 
+git commands. Last of all, commit -am and push origin. After all, back to git hub , confirm with merge pull request button.
+-------------------------------------------------------------------------------------------------------------------------------------
+In the event that there are unacceptable changes after the last commit, with git:
+19- git reset --hard , the whole repository with head abstract pointer
+20- git checkout HEAD --file/folder name , not the whole repos
+21- git log, commit detail
+22- git log --oneline , a smaller commit detail
+22- git log --oneline --graph , a smaller commit detail with graphic
+In case of missing sentences, in github it will be that information or not; so, it could help going back to the last commit with git checkout commitname, or 
+23- git reset --hard HEAD-1, then checkout main and pull origin
+24- git checkout HEAD-1, for going the last commit;  then checkout main and pull origin
