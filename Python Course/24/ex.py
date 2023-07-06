@@ -25,14 +25,15 @@ while True:
                 dic[w]=dic.get(w,0)+1
         #print(dic)
         #Now the most commond word
+        print("The content with its iterarion is: \n",dic)
         largest=-1
         theword=None
         for key,value in dic.items():
-            print(key,value)
+            #print(key,value)
             if value >largest:
                 largest=value
                 theword=key
-        print("\nAomg of all, the most common is\n", "'",theword,"' with ",largest," iteretions")
+        print("\nAomg of all, the most common word is", "'",theword,"' with ",largest," iteretions")
         fname=''
         continue
     except:
