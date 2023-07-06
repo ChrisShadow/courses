@@ -33,7 +33,7 @@ while True:
             if value >largest:
                 largest=value
                 theword=key
-        print("\nAomg of all, the most common word is", "'",theword,"' with ",largest," iteretions")
+        print("\nAmong of all, the most common word is", "'",theword,"' with ",largest," iteretions")
         fname=''
         continue
     except:
