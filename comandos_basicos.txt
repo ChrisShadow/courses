@@ -11,7 +11,7 @@ to create a folder/directory: mkdir namefolder/directory
 -------------------------------------------------------------------------------------------------------------------------------------
 Git hub: servicio web de Git, front end.  
 generador de llave ssh, protocolo de comunicación entre front (git hub) y back-end(git):
-1-ssh-keygeb(or just until here) -t rsa -b 4096 -C "email" : chrisz (en git), no compartir
+1-ssh-keygen(or just until here) -t rsa -b 4096 -C "email" : chrisz (en git), no compartir
 Varias nodos con git y sus respectivas ssh para git hub, para copiar (en git), 
 2-clip <~/nombre_rsa.pub
 Al crear repositorio, privado con una subscripción; para descargar el contenido, clonar con ssh a git: 
