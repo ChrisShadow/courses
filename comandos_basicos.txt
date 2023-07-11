@@ -58,3 +58,9 @@ In the event that there are unacceptable changes after the last commit, with git
 In case of missing sentences, in github it will be that information or not; so, it could help going back to the last commit with git checkout commitname, or 
 23- git reset --hard HEAD-1, then checkout main and pull origin
 24- git checkout HEAD-1, for going the last commit;  then checkout main and pull origin
+-------------------------------------------------------------------------------------------------------------------------------------
+To attempt a release: in Git hub, Releases section
+About Issues: in Git hub, on issues tab. For each issue, the correct workflow is to solve in a specific branch for finally merging into the main branch with
+the pull request. For tracking it, editing the initial comment by invoking with # and the name of the issue.
+About customisation: putting the same user name to a new repository. After cloning, by reading the readme file, git gives a sort of template which can be used
+for writting personal info and showing in the profile. Try searching for "customise git hub profile" in any search engine.
