@@ -1,0 +1,11 @@
+Exercise: XML
+https://www.youtube.com/watch?v=AopYOlDa-vY
+
+Exercise: Twitter
+https://youtu.be/2c7YwhvpCro
+
+Exercise: JSON
+https://youtu.be/vTmw5RtfGMY
+
+Exercise: GeoJSON
+https://youtu.be/TJGJN0T8tak
