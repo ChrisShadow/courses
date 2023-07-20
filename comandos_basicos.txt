@@ -64,3 +64,6 @@ About Issues: in Git hub, on issues tab. For each issue, the correct workflow is
 the pull request. For tracking it, editing the initial comment by invoking with # and the name of the issue.
 About customisation: putting the same user name to a new repository. After cloning, by reading the readme file, git gives a sort of template which can be used
 for writting personal info and showing in the profile. Try searching for "customise git hub profile" in any search engine.
+-------------------------------------------------------------------------------------------------------------------------------------
+About fork: To have a copy of some repository and make customisations. With the fork button int the upper right secction (https://youtu.be/9YUaf-uxuRM).
+After that, with ssh url and git clone...
