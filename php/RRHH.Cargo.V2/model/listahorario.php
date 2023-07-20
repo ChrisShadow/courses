@@ -56,8 +56,9 @@ class ListaHorario
         $index++;
     }
 
-    /*Next act, do a test with an aux class regardin listahorario for looking which goes firs= either set_key_lista_horario or set_value_horario
+    /*Next act, do a test with an aux class regardin listahorario for looking which goes first= either set_key_lista_horario or set_value_horario
     Then the other functions: delete, seek/edit. Lastly show_data
+    Format for horainicio & horafin in Horario
     */
 
     public function show_data()
