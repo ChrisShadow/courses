@@ -57,9 +57,7 @@ class ListaHorario
         self::$ArrayHorario[$index] = $horario;
         $index++;
     }
-    /*
-    Format for horainicio & horafin in Horario
-    */
+    
 
     public function show_data()
     {
