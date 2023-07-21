@@ -3,8 +3,9 @@
 
 //el archivo invocado es requerido, comecta el contenido del archivo requerido
 require_once "controller/templatecontroller.php";
-require_once "controller/cargoV1.php";
+require_once "test/test.php";
 $plantilla = new TempController();
-$plantilla->ctrBringTemp();
+$plantilla->ctrBringTest();
+
 
 ?>
