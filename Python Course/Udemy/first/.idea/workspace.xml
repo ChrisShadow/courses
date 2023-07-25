@@ -6,310 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c8c1426d-286d-424d-ae40-4d41bf9dde5e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../../Java Course/ProjectRest" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java Course/ProjectRest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10/arg_par_res.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10/argu.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10/exer1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10/logical.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10/paraAndargum.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10/param.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10/return.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10/return2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10/returnExam.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10/void.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11/break.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11/continu.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11/logic.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11/while.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/average.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/boolean.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/counting.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/definite.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/exer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/filtering.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/for_syntaxis.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/is_not_operat.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/loopStr.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/smalllestN_withNone.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/smartloops.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/summing.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../12_13_14/thelargestN.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../15/exaLenFor.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../15/exaLenWhile.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../15/in.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../15/len.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../15/read&amp;conv.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../15/strinArr.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../15/stringVal.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/ex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/findMeth.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/in_asLogicas.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/kindString.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/libraryString.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/methodString.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/parsing&amp;Extracting.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/search&amp;Replace.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/slicingString.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/slicingString2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/stringComp.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/stringLibrary.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../16/whiteSpace.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../17/backslashN.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../17/fileProcess.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../17/handle.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../17/opFile.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../17/open().JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/clase5_sgbda.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/countingLines.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/ex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/handleAssequence.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/prompt.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/promptFixed.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/searchinaFile.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/searchinafixedFile.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/selectWithiIN.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/skippingContinue.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/t.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/titanic.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../18/wholeFiles.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/concatenate.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/examList.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/indexL.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/len.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/list.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/listCons.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/mutable.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/notCollect.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/programing.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/range.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../19/twoLoops.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2/01_hard.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2/02_defi.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20/appende.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20/dirList.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20/examp.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20/max_sum_min_len.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20/slice.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20/sort.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20/true_false_not.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../21/aboutSpaces.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../21/doubleSplit.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../21/examp.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../21/exr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../21/not.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../21/split.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../22/Collec-Dictionary.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../22/collec.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../22/exaOfDic.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../22/listVSdic.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../22/logDic.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../23/exCOunting.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../23/getDict.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../23/getSimplified.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../23/usability.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../24/escrito.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../24/ex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../24/exCountPattern.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../24/exCountPatternResult.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../24/exWithFile.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../24/keys_values_items.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../24/loops.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../24/twoIteration.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../24/whyProgramming.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../25/ComparableOper.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../25/immut.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../25/moreEffic.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../25/nottopdo.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../25/tupANDDic.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../25/tuples.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../26/10MostoCommonWord.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../26/ex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../26/pass.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../26/shorterVersion.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../26/sorting.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../26/sorting2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../26/valueInsteadofKey.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../27/fine-tuning.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../27/module.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../27/regular express.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../27/signs.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../27/understanding.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../27/wild_card.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../28/fine_tunin_string.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../28/greedy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../28/matching_extracting.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../28/matching_extracting_2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../28/no-greedy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../29/double_split.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../29/escape.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../29/example.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../29/regex_greedy.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../29/string_slicing.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3/01_mean.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3/02_py.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3/03_syntax.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../30/commonTcpPorts.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../30/coolMeme.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../30/sockets.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../30/socketsPython.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../30/tcp.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../30/tcpNumb.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../31/appProtocol.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../31/dataServer.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../31/hack.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../31/http.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../31/http2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../31/internetStandards.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../31/protocol.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../31/telnet.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../32/1stSockProg.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../32/1stSockProg_Result.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../33/UTF-8.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../33/ascii.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../33/ascii2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../33/httpRequest.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../33/httpRequest2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../33/pythonU.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../33/pythonV.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../33/strings2bytes.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../33/unicode.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../34/urllib.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../34/urllibEx2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../34/urllibExWPages.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../35/BS_Examp.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../35/BS_installation.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../35/EasyWay_BeautifuloSoup.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../35/NetSumm.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../35/Scrape.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../35/scraping.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../35/scraping2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/data Web.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/json.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/sendingData.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/whiteSpaces.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/xml.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/xml2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/xml3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/xmlAsPath.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/xmlAsTree.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/xmlAsTreeWithAtt.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/xmlElem.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../36_37/xmlTerms.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/constraints.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/dataTypes.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/date-time format.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/exaPy.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/exaPy2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/json_Founder.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/languages.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/pyParsingJson.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/pyParsingJson2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/structure.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/validator.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/xmlInstance.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/xml_schema.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../38_39/xml_schema2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4/01_reser.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4/02_senten.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4/03_scripts.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4/04_intervsScrip.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4/05_flow.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4/06_sec.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4/07_cond.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4/08_rep.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../4/09_firstAlg.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/api.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/apipy.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/exApipy.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/limitations.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/multiplesystems.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/oauth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/serviceOrientedApproach.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/summ.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/tweet_api.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../40_41_42/tweet_api_result.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/ClassExam.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/ClassExam2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/Input_Process_Output.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/POO.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/aClass.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/aMethod.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/algorithm.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/anInstace.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/datarStruct_list.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/objectApproach.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/terms.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/type_dir.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../43_44/warnign.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/ManyInstances.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/const_destruct.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/constr.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/constructor.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/definitions.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/examInh.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/examplewitParam.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/inheritance.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/objectCycle.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/summ.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../45_46/termInh.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5/assig.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5/cons.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5/example.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5/mnemonic.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5/nameofVar.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5/sentences.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5/variab.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/ExadataType.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/IntegerDiv.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/Nexpression.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/NumbersType.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/StringConv.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/comments.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/convers.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/dataType.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/exNexpre.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/exer1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/exer1_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/exofPreced.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/input.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/inputConv.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/orderEvaluation.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/orderEvaluation2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../6/precedence.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../7/doubleif.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../7/eofOperat.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../7/exofIfandIndent.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../7/if.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../7/ifSimple.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../7/if_elif.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../7/indent.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../7/operators.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../7/tabs.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8/EmultiElif.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8/Exer1_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8/Trycatch.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8/TrycatchExam.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8/anotherExofTrycatch.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8/eofInecessaryMultiElif.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8/multElif.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../9/defofFunc.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../9/function.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../9/maxFun.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../9/notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../9/typeFunc.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../9/typeofConv.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../9/typeofSConv.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Intro/01_what.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Intro/02_needs.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Intro/03_users.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Intro/04_why.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Intro/05_perspective.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Intro/06_program.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Intro/first.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/first.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/first.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,16 +29,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.main (1)">
+}</component>
+  <component name="RunManager" selected="Python.main (2)">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="first" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -354,6 +52,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Calculator/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="first" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exercise1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercise1/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -385,6 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
       </list>
     </recent_temporary>
