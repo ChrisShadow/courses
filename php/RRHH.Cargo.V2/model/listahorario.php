@@ -11,60 +11,56 @@ https: //www.php.net/manual/en/class.ds-map.php#:~:text=A%20Map%20is%20a%20seque
 class ListaHorario
 {
     #region att
-    private static $MapaHorario; //[{Lugar trabajo:Horario}]
-    private static $ArrayHorario; //posición y el objeto instanciado horario
-    private LugarTrabajo $lugarTrabajo;
+    private $MapaHorario; //[{Lugar trabajo:Horario}]
+    private $ArrayHorario; //posición y el objeto instanciado horario
+    //private LugarTrabajo $lugarTrabajo;
     #endregion
 
     #region const
     function __construct(
 
     ) {
-        self::$MapaHorario = null;
-        self::$ArrayHorario = null;
+        $this->MapaHorario = array();
+        $this->ArrayHorario = array();
     }
     #endregion
 
     #region getter
-    public function get_lugarTrabajo()
+    public function get_MapaHorario()
     {
-        return $this->lugarTrabajo->show_data();
+        return $this->MapaHorario;
     }
     #endregion 
 
     #region setter
-    public function set_lugarTrabajo($lugarTrabajo)
+    public function set_MapaHorario_lugarTrabajo(LugarTrabajo $lugarTrabajo)
     {
-        $this->lugarTrabajo = $lugarTrabajo;
+        $this->MapaHorario[$lugarTrabajo->get_nombreEmpresa() . " - " . $lugarTrabajo->get_sucursal()] = $this->ArrayHorario;
     }
     #endregion
 
     #region methods
     //Creating and setting the new map
     //Just for the first time
-    public function set_key_lista_horario()
-    {
-        self::$MapaHorario = (object) array($this->lugarTrabajo => self::$ArrayHorario); //[{Lugar trabajo:Horario}]
-    }
+
 
     //Adding new elements to horario list which is the value in the map
     public function set_value_horario(Horario $horario)
     {
-        if (self::$ArrayHorario === null) {
-            self::$ArrayHorario = array();
+        if (isset($this->ArrayHorario))
             $index = 0;
-        }
-        self::$ArrayHorario[$index] = $horario;
+        $this->ArrayHorario[$index] = $horario;
         $index++;
     }
-    
+    //Probar si actualiza o no para la lógica de encontrar el mapa y volver a instanciar actualizado
+
 
     public function show_data()
     {
-        $response = "Lista horario: [Lugar de trabajo: " . $this->get_lugarTrabajo() . "]";
+        $response = "Lista horario: [Lugar de trabajo: " . $this->get_MapaHorario() . "]";
         return json_encode($response);
     }
-
+    //Validar que en el get mapa exista o no el recorrido previo antes de la vista 
 
     #endregion
 }
