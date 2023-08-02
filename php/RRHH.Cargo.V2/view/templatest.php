@@ -31,14 +31,15 @@
     <div class="container-fluid">
         <div class="container pt-3 d-flex-inline text-center">
             <?php
+            require_once "test/test.php";
             $test = new Test();
             $test->TestingMap();
 
             print("<table><tr><th>Sede</th><th>Horario</th></tr>");
-            foreach ($test->listaH as $key => $value) {
-                print("<tr><td>" + $key->show_data() + "</td><td>");
-                foreach ($value as $key => $value) {
-                    print(($key + 1) + " - " + $value->show_data() + "</td></tr>");
+            foreach ($test->listaH as $keyM => $value) {
+                print("<tr><td>" + $keyM->show_data() + "</td><td>");
+                foreach ($value as $keyA => $value) {
+                    print(($keyA + 1) + " - " + $value->show_data() + "</td></tr>");
                 }
             }
             print("</table>");

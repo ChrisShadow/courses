@@ -1,4 +1,6 @@
 <?php
+namespace Test;
+
 use Model\Horario;
 use Model\LugarTrabajo;
 use Model\ListaHorario;
@@ -7,7 +9,7 @@ class Test
 {
     public ListaHorario $listaH;
 
-    function __construct()
+    public function __construct()
     {
         $this->listaH = new ListaHorario();
     }
@@ -18,11 +20,10 @@ class Test
         $sede1 = new LugarTrabajo("Proinso", "Sede Central", "Luque", "Ytororo e Itaipu");
         $sede2 = new LugarTrabajo("QUATTRO", "Sede Central", "Asunción", "Ytororo");
 
-        $this->listaH->set_lugarTrabajo($sede1);
-        $this->listaH->set_key_lista_horario();
+        //
+        $this->listaH->set_MapaHorario_lugarTrabajo($sede1);
         self::TestingArray();
-        $this->listaH->set_lugarTrabajo($sede2);
-        $this->listaH->set_key_lista_horario();
+        $this->listaH->set_MapaHorario_lugarTrabajo($sede2);
         self::TestingArray();
     }
 

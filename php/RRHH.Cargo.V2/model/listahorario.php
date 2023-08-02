@@ -8,6 +8,8 @@ use Model\Horario;
 https: //www.php.net/manual/en/class.ds-map.php#:~:text=A%20Map%20is%20a%20sequential,map%20using%20the%20same%20key.
 #endregion
 
+//Quedamos en corregir en base a propuesta chatgpt
+
 class ListaHorario
 {
     #region att
