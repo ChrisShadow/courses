@@ -4,17 +4,17 @@ namespace Model;
 use Model\LugarTrabajo;
 use Model\Horario;
 
+use Ds\Map;
+
 #region doc
 https: //www.php.net/manual/en/class.ds-map.php#:~:text=A%20Map%20is%20a%20sequential,map%20using%20the%20same%20key.
 #endregion
 
-//Quedamos en corregir en base a propuesta chatgpt
 
 class ListaHorario
 {
     #region att
     private $MapaHorario; //[{Lugar trabajo:Horario}]
-    private $ArrayHorario; //posición y el objeto instanciado horario
     //private LugarTrabajo $lugarTrabajo;
     #endregion
 
@@ -22,8 +22,7 @@ class ListaHorario
     function __construct(
 
     ) {
-        $this->MapaHorario = array();
-        $this->ArrayHorario = array();
+        $this->MapaHorario = new Map(); // Tarea: implementar librería, pasos en gpt para el  17/08
     }
     #endregion
 
