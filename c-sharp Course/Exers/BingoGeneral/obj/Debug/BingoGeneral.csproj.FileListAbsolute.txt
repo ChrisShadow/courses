@@ -1,0 +1,16 @@
+C:\Users\ASUS\Dropbox\lm\cursos\Programación\C#\BingoGeneral\bin\Debug\BingoGeneral.exe.config
+C:\Users\ASUS\Dropbox\lm\cursos\Programación\C#\BingoGeneral\bin\Debug\BingoGeneral.exe
+C:\Users\ASUS\Dropbox\lm\cursos\Programación\C#\BingoGeneral\bin\Debug\BingoGeneral.pdb
+C:\Users\ASUS\Dropbox\lm\cursos\Programación\C#\BingoGeneral\obj\Debug\BingoGeneral.csproj.AssemblyReference.cache
+C:\Users\ASUS\Dropbox\lm\cursos\Programación\C#\BingoGeneral\obj\Debug\BingoGeneral.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Dropbox\lm\cursos\Programación\C#\BingoGeneral\obj\Debug\BingoGeneral.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Dropbox\lm\cursos\Programación\C#\BingoGeneral\obj\Debug\BingoGeneral.exe
+C:\Users\ASUS\Dropbox\lm\cursos\Programación\C#\BingoGeneral\obj\Debug\BingoGeneral.pdb
+C:\Users\chris\Downloads\BingoGeneral\bin\Debug\BingoGeneral.exe.config
+C:\Users\chris\Downloads\BingoGeneral\bin\Debug\BingoGeneral.exe
+C:\Users\chris\Downloads\BingoGeneral\bin\Debug\BingoGeneral.pdb
+C:\Users\chris\Downloads\BingoGeneral\obj\Debug\BingoGeneral.csproj.AssemblyReference.cache
+C:\Users\chris\Downloads\BingoGeneral\obj\Debug\BingoGeneral.csproj.SuggestedBindingRedirects.cache
+C:\Users\chris\Downloads\BingoGeneral\obj\Debug\BingoGeneral.csproj.CoreCompileInputs.cache
+C:\Users\chris\Downloads\BingoGeneral\obj\Debug\BingoGeneral.exe
+C:\Users\chris\Downloads\BingoGeneral\obj\Debug\BingoGeneral.pdb
