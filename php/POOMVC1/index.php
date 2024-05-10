@@ -4,7 +4,8 @@
 //el archivo invocado es requerido, comecta el contenido del archivo requerido
 require_once "controlers/controltemp.php";
 require_once "models/model.php";
-$plantilla= new TempController();
-$plantilla -> ctrBringTemp();
+require_once "controlers/forms.contr.php";
+$plantilla = new TempController();
+$plantilla->ctrBringTemp();
 
 ?>

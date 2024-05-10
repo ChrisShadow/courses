@@ -1,19 +1,21 @@
 <?php
-Class PagesLinks{
+class PagesLinks
+{
 
-    public function linkModelPages($urlModel){
+    public function linkModelPages($urlModel)
+    {
 
-        if($urlModel=="reg" || $urlModel=="in" || $urlModel=="out"){
+        if ($urlModel == "reg" || $urlModel == "in" || $urlModel == "out") {
 
-            $view="views/pages/".$urlModel.".php";
+            $view = "views/pages/" . $urlModel . ".php";
 
-        }else if($urlModel=="index"){
-            $view="views/pages/index.php";
-        }else{
-            $view="views/pages/index.php";
+        } else if ($urlModel == "index") {
+            $view = "views/pages/index.php";
+        } else {
+            $view = "views/pages/error404.php";
         }
 
-        return $view;                                                                                                                                                                                                                                                                                           
+        return $view;
     }
 }
 ?>
