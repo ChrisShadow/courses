@@ -5,6 +5,9 @@
 require_once "controlers/controltemp.php";
 require_once "models/model.php";
 require_once "controlers/forms.contr.php";
+require_once "models/forms.model.php";
+
+
 $plantilla = new TempController();
 $plantilla->ctrBringTemp();
 
