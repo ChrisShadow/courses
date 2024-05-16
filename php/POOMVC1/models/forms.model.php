@@ -19,4 +19,12 @@ class FormsModel
         $stmt->close();
         $stmt = null;
     }
+    static public function mdlBringData($table)
+    {
+        $stmt = Conexion::connect()->prepare("SELECT *,DATE_FORMAT(fecha_registro,'%d/%m/%Y') AS fecha_registro FROM $table ORDER BY id DESC");
+        $stmt->execute();
+        return $stmt->fetchAll();
+        $stmt->close();
+        $stmt = null;
+    }
 }

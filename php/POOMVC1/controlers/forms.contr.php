@@ -20,4 +20,11 @@ class FormsController
             //return $_POST["reg-name"] . "<br>" . $_POST["reg-lastn"] . "<br>" . $_POST["reg-email"] . "<br>" . $_POST["reg-pss"] . "<br>";
         }
     }
+
+    static public function ctrBringData()
+    {
+        $table = "usuario";
+        $response = FormsModel::mdlBringData($table);
+        return $response;
+    }
 }
