@@ -1,8 +1,14 @@
-<div class="mt-4 p-5 bg-primary text-white rounded">
-  <h1>See you soon</h1>
-  <p>Come back whenever you want</p>
-</div>                     
-                        
-        
-        
+<?php
+session_destroy();
+
+echo '<script>
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+    window.location = "index.php?page=in";
+    </script>';
+
+
+
+
 

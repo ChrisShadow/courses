@@ -1,4 +1,18 @@
 <?php
+if (!isset($_SESSION["validateLogin"])) {
+    echo '<script>
+        window.location = "index.php?action=in";
+        </script>';
+    return;
+} else {
+    if ($_SESSION["validateLogin"] != "ok") {
+        echo '<script>
+        window.location = "index.php?action=in";
+        </script>';
+        return;
+    }
+}
+
 $user = FormsController::ctrBringData();
 //var_dump($user);
 ?>

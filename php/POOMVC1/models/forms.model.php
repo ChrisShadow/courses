@@ -16,15 +16,25 @@ class FormsModel
         } else {
             print_r(Conexion::connect()->errorInfo());
         }
-        $stmt->close();
+        //$stmt->close();
         $stmt = null;
     }
-    static public function mdlBringData($table)
+    static public function mdlBringData($table, $item, $value)
     {
-        $stmt = Conexion::connect()->prepare("SELECT *,DATE_FORMAT(fecha_registro,'%d/%m/%Y') AS fecha_registro FROM $table ORDER BY id DESC");
-        $stmt->execute();
-        return $stmt->fetchAll();
-        $stmt->close();
-        $stmt = null;
+        if ($item == null && $value == null) {
+            $stmt = Conexion::connect()->prepare("SELECT *,DATE_FORMAT(fecha_registro,'%d/%m/%Y') AS fecha_registro FROM $table ORDER BY id DESC");
+            $stmt->execute();
+            return $stmt->fetchAll();
+        } else {
+            $stmt = Conexion::connect()->prepare("SELECT *,DATE_FORMAT(fecha_registro,'%d/%m/%Y') AS fecha_registro FROM $table WHERE $item = :$item ORDER BY id DESC");
+            $stmt->bindParam(":" . $item, $value, PDO::PARAM_STR);
+            $stmt->execute();
+            return $stmt->fetch();
+
+        }
+
+
+        //$stmt->close();
+        //$stmt = null;
     }
 }

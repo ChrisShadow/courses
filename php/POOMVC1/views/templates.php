@@ -1,5 +1,11 @@
+<?php
+//session variables
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,12 +20,13 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/e632f1f723.js" crossoringin="anonymous"></script>
 </head>
+
 <body>
 
     <div class="container-fluid">
         <h3 class="text-center py-3">MVC Template Example</h3>
     </div>
-    
+
     <div class="container-fluid bg-light">
         <div class="container">
             <ul class="nav nav-justified py-2 nav-pills">
@@ -31,29 +38,29 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?action=reg">Register</a>
                 </li>
-                
-                <li class="nav-item">   
+
+                <li class="nav-item">
                     <a class="nav-link" href="index.php?action=in">Log in</a>
                 </li>
-                
+
                 <li class="nav-item">
                     <!-- data-toggle="modal" data-target="#logoutModal" -->
-                    <a class="nav-link" href="index.php?action=out" >Log out</a>
+                    <a class="nav-link" href="index.php?action=out">Log out</a>
                 </li>
             </ul>
         </div>
     </div>
-    
+
     <div class="container-fluid">
         <div class="container pt-3">
             <?php
-                $mvc= new TempController();
-                $mvc-> linkControllerPages();
+            $mvc = new TempController();
+            $mvc->linkControllerPages();
             ?>
         </div>
     </div>
 
-    
+
     <!-- <div class="modal" id="logoutModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
@@ -75,4 +82,5 @@
         </div>
     </div> -->
 </body>
+
 </html>
