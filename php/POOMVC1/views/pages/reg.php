@@ -24,13 +24,13 @@
                 <input type="password" class="form-control" id="pwd" name="reg-pss" placeholder="Enter password">
             </div>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <div class="checkbox my-2">
                     <label><input type="checkbox"> Remember me</label>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <?php
         //Instances of non-static methods

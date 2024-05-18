@@ -5,7 +5,7 @@ class PagesLinks
     public function linkModelPages($urlModel)
     {
 
-        if ($urlModel == "reg" || $urlModel == "in" || $urlModel == "out") {
+        if ($urlModel == "reg" || $urlModel == "in" || $urlModel == "out" || $urlModel == "edit") {
 
             $view = "views/pages/" . $urlModel . ".php";
 

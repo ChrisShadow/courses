@@ -13,8 +13,12 @@ if (!isset($_SESSION["validateLogin"])) {
     }
 }
 
-$user = FormsController::ctrBringData();
+$user = FormsController::ctrBringData(null, null);
 //var_dump($user);
+
+//$edit = new FormsController();
+//$edit->ctrEditUser();
+
 ?>
 
 <table class="table table-striped">
@@ -39,12 +43,19 @@ $user = FormsController::ctrBringData();
                 <td><?php echo $value["fecha_registro"]; ?></td>
                 <td>
                     <div class="btn-gruop">
-                        <button class="btn btn-warning">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="btn btn-danger">
-                            <i class="fas fa-trash"></i>
-                        </button>
+                        <form method="post">
+                            <a href="index.php?action=edit&id=<?php echo $value["id"]; ?>" class="btn btn-warning">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <input type="hidden" value="<?php echo $value["id"]; ?>" name="delete-user">
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            <?php
+                            $delete = new FormsController();
+                            $delete->ctrDeleteUser();
+                            ?>
+                        </form>
                     </div>
                 </td>
             </tr>

@@ -21,10 +21,10 @@ class FormsController
         }
     }
 
-    static public function ctrBringData()
+    static public function ctrBringData($item, $value)
     {
         $table = "usuario";
-        $response = FormsModel::mdlBringData($table, null, null);
+        $response = FormsModel::mdlBringData($table, $item, $value);
         return $response;
     }
 
@@ -55,6 +55,47 @@ class FormsController
                 </script>';
 
                 echo '<div class="alert alert-danger mt-2">Error: User or password incorrect</div>';
+            }
+        }
+    }
+
+    static public function ctrEditUser()
+    {
+        if (isset($_POST["edit-name"])) {
+            if ($_POST["edit-pss"] != "") {
+                $password = $_POST["edit-pss"];
+            } else {
+                $password = $_POST["current-pwd"];
+            }
+
+            $table = "usuario";
+            $data = array(
+                "id" => $_POST["id-user"],
+                "nombre" => $_POST["edit-name"],
+                "apellido" => $_POST["edit-lastn"],
+                "correo" => $_POST["edit-email"],
+                "clave" => $password
+            );
+
+            $response = FormsModel::mdlEditUser($table, $data);
+            return $response;
+        }
+    }
+
+    static public function ctrDeleteUser()
+    {
+        if (isset($_POST["delete-user"])) {
+            $table = "usuario";
+            $value = $_POST["delete-user"];
+            $response = FormsModel::mdlDeleteUser($table, $value);
+
+            if ($response == "ok") {
+                echo '<script>
+                if (window.history.replaceState) {
+                    window.history.replaceState(null, null, window.location.href);
+                }
+                window.location = "index.php?action=index";
+                </script>';
             }
         }
     }

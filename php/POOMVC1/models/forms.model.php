@@ -37,4 +37,35 @@ class FormsModel
         //$stmt->close();
         //$stmt = null;
     }
+
+    static public function mdlEditUser($table, $data)
+    {
+        $stmt = Conexion::connect()->prepare("UPDATE $table SET nombre = :nombre, apellido = :apellido, clave = :clave, correo = :correo WHERE id = :id");
+        $stmt->bindParam(":id", $data["id"], PDO::PARAM_INT);
+        $stmt->bindParam(":nombre", $data["nombre"], PDO::PARAM_STR);
+        $stmt->bindParam(":apellido", $data["apellido"], PDO::PARAM_STR);
+        $stmt->bindParam(":clave", $data["clave"], PDO::PARAM_STR);
+        $stmt->bindParam(":correo", $data["correo"], PDO::PARAM_STR);
+
+        if ($stmt->execute()) {
+            return "ok";
+        } else {
+            print_r(Conexion::connect()->errorInfo());
+        }
+        //$stmt->close();
+        $stmt = null;
+    }
+    static public function mdlDeleteUser($table, $data)
+    {
+        $stmt = Conexion::connect()->prepare("DELETE FROM $table WHERE id = :id");
+        $stmt->bindParam(":id", $data, PDO::PARAM_INT);
+
+        if ($stmt->execute()) {
+            return "ok";
+        } else {
+            print_r(Conexion::connect()->errorInfo());
+        }
+        //$stmt->close();
+        $stmt = null;
+    }
 }
