@@ -9,4 +9,5 @@ Route::get('/home', function () {
 Route::get('/', function () {
     return view('welcome');
 });
-route::get('test', [HomeController::class, 'test']);
+route::get('/indexP', [HomeController::class, 'index']);
+route::post('/add_product', [HomeController::class, 'add_product']);
