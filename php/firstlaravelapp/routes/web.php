@@ -11,3 +11,5 @@ Route::get('/', function () {
 });
 route::get('/indexP', [HomeController::class, 'index']);
 route::post('/add_product', [HomeController::class, 'add_product']);
+route::get('show_product', [HomeController::class, 'show_product']);
+route::get('/delete_product/{id}', [HomeController::class, 'delete_product']);

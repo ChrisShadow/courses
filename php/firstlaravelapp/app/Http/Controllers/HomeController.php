@@ -28,4 +28,15 @@ class HomeController extends Controller
         $data->save();
         return redirect()->back();
     }
+    public function show_product()
+    {
+        $data = Product::all();
+        return view('product', compact('data'));
+    }
+    public function delete_product($id)
+    {
+        $data = Product::find($id);
+        $data->delete();
+        return redirect()->back();
+    }
 }
