@@ -21,6 +21,7 @@
                 <th>Product description</th>
                 <th>Product image</th>
                 <th>Delete</th>
+                <th>Update</th>
             </tr>
             @foreach($data as $product)
                 <tr>
@@ -30,6 +31,8 @@
                     <td><img src="imagesP/{{$product->image}}" alt="image" width="100px" height="100px"></td>
                     <td><a onclick="return confirm('Are you sure?');" class="btn btn-danger"
                             href="{{url('/delete_product/' . $product->id)}}"><i class="fas fa-trash"></i></a></td>
+                    <td><a class="btn btn-warning" href="{{url('/update_product/' . $product->id)}}"><i
+                                class="fas fa-edit"></i></a></td>
                 </tr>
             @endforeach
 
