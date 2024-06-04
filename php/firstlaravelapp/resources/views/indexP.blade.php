@@ -18,6 +18,13 @@
 <body>
     <center>
         <h1>Add Product</h1>
+        @if($errors)
+            @foreach($errors->all() as $error)
+                <div class="alert alert-danger" role="alert">
+                    {{$error}}
+                </div>
+            @endforeach
+        @endif
         <form action="{{url('/add_product')}}" method="Post" enctype="multipart/form-data">
             @csrf
             <div class="div-deg">
