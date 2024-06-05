@@ -5,7 +5,8 @@ class FormsModel
 {
     static public function mdlRegister($table, $data)
     {
-        $stmt = Conexion::connect()->prepare("INSERT INTO $table(nombre,apellido, clave, correo) VALUES (:nombre,:apellido, :clave, :correo)");
+        $stmt = Conexion::connect()->prepare("INSERT INTO $table(token,nombre,apellido, clave, correo) VALUES (:token,:nombre,:apellido, :clave, :correo)");
+        $stmt->bindParam(":token", $data["token"], PDO::PARAM_STR);
         $stmt->bindParam(":nombre", $data["nombre"], PDO::PARAM_STR);
         $stmt->bindParam(":apellido", $data["apellido"], PDO::PARAM_STR);
         $stmt->bindParam(":clave", $data["clave"], PDO::PARAM_STR);
@@ -40,8 +41,8 @@ class FormsModel
 
     static public function mdlEditUser($table, $data)
     {
-        $stmt = Conexion::connect()->prepare("UPDATE $table SET nombre = :nombre, apellido = :apellido, clave = :clave, correo = :correo WHERE id = :id");
-        $stmt->bindParam(":id", $data["id"], PDO::PARAM_INT);
+        $stmt = Conexion::connect()->prepare("UPDATE $table SET nombre = :nombre, apellido = :apellido, clave = :clave, correo = :correo WHERE token = :token");
+        $stmt->bindParam(":token", $data["token"], PDO::PARAM_STR);
         $stmt->bindParam(":nombre", $data["nombre"], PDO::PARAM_STR);
         $stmt->bindParam(":apellido", $data["apellido"], PDO::PARAM_STR);
         $stmt->bindParam(":clave", $data["clave"], PDO::PARAM_STR);
@@ -57,8 +58,8 @@ class FormsModel
     }
     static public function mdlDeleteUser($table, $data)
     {
-        $stmt = Conexion::connect()->prepare("DELETE FROM $table WHERE id = :id");
-        $stmt->bindParam(":id", $data, PDO::PARAM_INT);
+        $stmt = Conexion::connect()->prepare("DELETE FROM $table WHERE token = :token");
+        $stmt->bindParam(":token", $data, PDO::PARAM_STR);
 
         if ($stmt->execute()) {
             return "ok";

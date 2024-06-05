@@ -48,6 +48,16 @@
 				</script>';
             echo '<div class="alert alert-success">User has been registered</div>';
         }
+        if ($reg == "error") {
+            echo '
+            <script>
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href);
+            }
+            </script>';
+            echo '<div class="alert alert-danger">User has not been registered</div>';
+        }
+
         ?>
 
         <div class="form-group">

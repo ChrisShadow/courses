@@ -44,10 +44,10 @@ $user = FormsController::ctrBringData(null, null);
                 <td>
                     <div class="btn-gruop">
                         <form method="post">
-                            <a href="index.php?action=edit&id=<?php echo $value["id"]; ?>" class="btn btn-warning">
+                            <a href="index.php?action=edit&token=<?php echo $value["token"]; ?>" class="btn btn-warning">
                                 <i class="fas fa-edit"></i>
                             </a>
-                            <input type="hidden" value="<?php echo $value["id"]; ?>" name="delete-user">
+                            <input type="hidden" value="<?php echo $value["token"]; ?>" name="delete-user">
                             <button type="submit" class="btn btn-danger">
                                 <i class="fas fa-trash"></i>
                             </button>

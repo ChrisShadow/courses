@@ -1,7 +1,7 @@
 <?php
-if (isset($_GET["id"])) {
-    $item = "id";
-    $value = $_GET["id"];
+if (isset($_GET["token"])) {
+    $item = "token";
+    $value = $_GET["token"];
     $user = FormsController::ctrBringData($item, $value);
     //print_r($user);
 }
@@ -31,7 +31,7 @@ if (isset($_GET["id"])) {
             <div class="col-sm-10">
                 <input type="password" class="form-control my-2" id="pwd" name="edit-pss" placeholder="Enter password">
                 <input type="hidden" name="current-pwd" value="<?php echo $user["clave"]; ?>">
-                <input type="hidden" name="id-user" value="<?php echo $user["id"]; ?>">
+                <input type="hidden" name="token-user" value="<?php echo $user["token"]; ?>">
             </div>
         </div>
         <!-- <div class="form-group">
@@ -57,6 +57,14 @@ if (isset($_GET["id"])) {
                     window.location = "index.php?page=index";
                 }, 3000);
                 </script>';
+        }
+        if ($edit == "error") {
+            echo '<script>
+                if (window.history.replaceState) {
+                    window.history.replaceState(null, null, window.location.href);
+                }
+                </script>';
+            echo '<div class="alert alert-danger mt-2">Error: User not updated</div>';
         }
         ?>
 
