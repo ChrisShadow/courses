@@ -52,6 +52,8 @@ class FormsController
 
             if ($response["correo"] == $_POST["login-email"] && $response["clave"] == $_POST["login-pwd"]) {
 
+                FormsModel::mdlEditFailedAttemps($table, 0, $response["token"]);
+
                 $_SESSION["validateLogin"] = "ok";
 
                 echo '<script>
@@ -61,6 +63,17 @@ class FormsController
                 window.location = "index.php?page=index";
                 </script>';
             } else {
+                if ($response["intentos_fallidos"] >= 3) {
+                    echo '<div class="alert alert-warning mt-2">You have exceeded the number of attempts.</div>';
+                    return;
+                } else {
+                    $table = "usuario";
+                    $intentos_fallidos = $response["intentos_fallidos"] + 1;
+                    FormsModel::mdlEditFailedAttemps($table, $intentos_fallidos, $response["token"]);
+                    /* echo '<pre>';
+                    print_r($intentos_fallidos);
+                    echo '</pre>'; */
+                }
                 $_SESSION["validateLogin"] = "error";
                 echo '<script>
                 if (window.history.replaceState) {

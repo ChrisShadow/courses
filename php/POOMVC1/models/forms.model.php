@@ -69,4 +69,17 @@ class FormsModel
         //$stmt->close();
         $stmt = null;
     }
+    static public function mdlEditFailedAttemps($table, $value, $token)
+    {
+        $stmt = Conexion::connect()->prepare("UPDATE $table SET intentos_fallidos = :intentos_fallidos WHERE token = :token");
+        $stmt->bindParam(":intentos_fallidos", $value, PDO::PARAM_INT);
+        $stmt->bindParam(":token", $token, PDO::PARAM_STR);
+        if ($stmt->execute()) {
+            return "ok";
+        } else {
+            print_r(Conexion::connect()->errorInfo());
+        }
+        //$stmt->close();
+        $stmt = null;
+    }
 }
