@@ -12,12 +12,13 @@ class FormsController
                 && preg_match('/^[a-zA-Z0-9@.-_]+$/', $_POST["reg-pss"])
             ) {
                 $table = "usuario";
-                $token = md5($_POST["reg-email"] . "+" . $_POST["reg-pss"]);
+                $token = md5($_POST["reg-email"] . "+" . $_POST["reg-name"]);
+                $encryptPass = crypt($_POST["reg-pss"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
                 $data = array(
                     "token" => $token,
                     "nombre" => $_POST["reg-name"],
                     "apellido" => $_POST["reg-lastn"],
-                    "clave" => $_POST["reg-pss"],
+                    "clave" => $encryptPass,
                     "correo" => $_POST["reg-email"]
                 );
 
@@ -49,8 +50,9 @@ class FormsController
             $item = "correo";
             $value = $_POST["login-email"];
             $response = FormsModel::mdlBringData($table, $item, $value);
+            $encryptPass = crypt($_POST["login-pwd"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
 
-            if ($response["correo"] == $_POST["login-email"] && $response["clave"] == $_POST["login-pwd"]) {
+            if ($response["correo"] == $_POST["login-email"] && $response["clave"] == $encryptPass) {
 
                 FormsModel::mdlEditFailedAttemps($table, 0, $response["token"]);
 
@@ -95,11 +97,11 @@ class FormsController
                 && preg_match('/^[a-zA-Z0-9@.-_]+$/', $_POST["edit-email"])
             ) {
                 $user = FormsModel::mdlBringData("usuario", "token", $_POST["token-user"]);
-                $compare = md5($user["correo"] . "+" . $_POST["current-pwd"]);
+                $compare = md5($user["correo"] . "+" . $user["nombre"]);
                 if ($compare == $_POST["token-user"]) {
                     if ($_POST["edit-pss"] != "") {
                         if (preg_match('/^[a-zA-Z0-9@.-_]+$/', $_POST["edit-pss"])) {
-                            $password = $_POST["edit-pss"];
+                            $password = crypt($_POST["edit-pss"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
                         }
                     } else {
                         $password = $_POST["current-pwd"];
@@ -131,8 +133,8 @@ class FormsController
     static public function ctrDeleteUser()
     {
         if (isset($_POST["delete-user"])) {
-            $user = FormsModel::mdlBringData("usuario", "token", $_POST["token-user"]);
-            $compare = md5($user["correo"] . "+" . $_POST["current-pwd"]);
+            $user = FormsModel::mdlBringData("usuario", "token", $_POST["delete-user"]);
+            $compare = md5($user["correo"] . "+" . $user["nombre"]);
             if ($compare == $_POST["delete-user"]) {
                 $table = "usuario";
                 $value = $_POST["delete-user"];
