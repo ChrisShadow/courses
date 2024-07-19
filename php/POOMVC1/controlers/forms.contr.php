@@ -62,7 +62,7 @@ class FormsController
                 if (window.history.replaceState) {
                     window.history.replaceState(null, null, window.location.href);
                 }
-                window.location = "index.php?page=index";
+                window.location = "index";
                 </script>';
             } else {
                 if ($response["intentos_fallidos"] >= 3) {
@@ -145,7 +145,7 @@ class FormsController
                 if (window.history.replaceState) {
                     window.history.replaceState(null, null, window.location.href);
                 }
-                window.location = "index.php?action=index";
+                window.location = "index";
                 </script>';
                 }
             }

@@ -1,13 +1,13 @@
 <?php
 if (!isset($_SESSION["validateLogin"])) {
     echo '<script>
-        window.location = "index.php?action=in";
+        window.location = "in";
         </script>';
     return;
 } else {
     if ($_SESSION["validateLogin"] != "ok") {
         echo '<script>
-        window.location = "index.php?action=in";
+        window.location = "in";
         </script>';
         return;
     }
@@ -60,22 +60,7 @@ $user = FormsController::ctrBringData(null, null);
                 </td>
             </tr>
         <?php endforeach; ?>
-        <!-- <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-            <td>10/05/2024</td>
-            <td>
-                <div class="btn-gruop">
-                    <button class="btn btn-warning">
-                        <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="btn btn-danger">
-                        <i class="fas fa-trash"></i>
-                    </button>
-                </div>
-            </td>
-        </tr> -->
+
 
     </tbody>
 </table>

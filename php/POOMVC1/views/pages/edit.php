@@ -54,7 +54,7 @@ if (isset($_GET["token"])) {
                 
                 <script>
                 setTimeout(function() {
-                    window.location = "index.php?page=index";
+                    window.location = "index";
                 }, 3000);
                 </script>';
         }
