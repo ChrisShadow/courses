@@ -1,0 +1,6 @@
+29072024
+Chat gpt: 
+Contexto del objetivo, qué sugerencias de persuación para lograr dicho objetivo. 
+Resumir el contexto y sugerencias del objetivo en forma de prompt para ejectarlo con programación.
+Respuestas asertivas=preguntas asertivas
+
