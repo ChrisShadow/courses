@@ -5,10 +5,10 @@
         "version": "1.0"
     },
     "paths": {
-        "/tasks": {
+        "/api/tasks": {
             "get": {
                 "summary": "Obtener lista de tareas",
-                "operationId": "6a93d54730cde509d735e538ab6800f6",
+                "operationId": "471d938a3bfaeb6fbd981d7c3e2728b0",
                 "responses": {
                     "200": {
                         "description": "Lista de tareas"
@@ -17,7 +17,7 @@
             },
             "post": {
                 "summary": "Crear nueva tarea",
-                "operationId": "9b481c0ed5fdfa1a592d70ba39a348ee",
+                "operationId": "f803ebdb2300acdb7e93bbe8d0b9a2e8",
                 "requestBody": {
                     "required": true,
                     "content": {
@@ -43,10 +43,10 @@
                 }
             }
         },
-        "/tasks/{id}": {
+        "/api/tasks/{id}/show": {
             "get": {
                 "summary": "Obtener tarea por ID",
-                "operationId": "fd3677b5b24695d7b801715869b1357c",
+                "operationId": "54419c7b8ee5ce2020f4d7f1454ea383",
                 "parameters": [
                     {
                         "name": "id",
@@ -62,10 +62,12 @@
                         "description": "Tarea obtenida"
                     }
                 }
-            },
+            }
+        },
+        "/api/tasks/{id}/update": {
             "put": {
                 "summary": "Actualizar tarea",
-                "operationId": "85377ff0e935f093dd75ea6886923dbc",
+                "operationId": "7dcd8eda3557b03f8cd22b11c7eb585a",
                 "parameters": [
                     {
                         "name": "id",
@@ -99,10 +101,12 @@
                         "description": "Tarea actualizada"
                     }
                 }
-            },
+            }
+        },
+        "/api/tasks/{id}/delete": {
             "delete": {
                 "summary": "Eliminar tarea",
-                "operationId": "5ed5dfd4c645e9398f4282969bfe6478",
+                "operationId": "8dfc54620ffd9ffe7d50dc7932ffe5eb",
                 "parameters": [
                     {
                         "name": "id",

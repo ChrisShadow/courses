@@ -13,7 +13,7 @@ class TaskController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/tasks",
+     *     path="/api/tasks",
      *     summary="Obtener lista de tareas",
      *     @OA\Response(
      *         response=200,
@@ -29,7 +29,7 @@ class TaskController extends Controller
 
     /**
      * @OA\Post(
-     *     path="/tasks",
+     *     path="/api/tasks",
      *     summary="Crear nueva tarea",
      *     @OA\RequestBody(
      *         required=true,
@@ -58,7 +58,7 @@ class TaskController extends Controller
 
     /**
      * @OA\Get(
-     *     path="/tasks/{id}",
+     *     path="/api/tasks/{id}/show",
      *     summary="Obtener tarea por ID",
      *     @OA\Parameter(
      *         name="id",
@@ -83,7 +83,7 @@ class TaskController extends Controller
 
     /**
      * @OA\Put(
-     *     path="/tasks/{id}",
+     *     path="/api/tasks/{id}/update",
      *     summary="Actualizar tarea",
      *     @OA\Parameter(
      *         name="id",
@@ -123,7 +123,7 @@ class TaskController extends Controller
 
     /**
      * @OA\Delete(
-     *     path="/tasks/{id}",
+     *     path="/api/tasks/{id}/delete",
      *     summary="Eliminar tarea",
      *     @OA\Parameter(
      *         name="id",
