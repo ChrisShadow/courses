@@ -1,3 +1,39 @@
+01082024
+Sitio web de Kombuchas, Kefir y chicha saborizadas naturalmente
+Prompt1: Quiero construir una página de aterrizaje para una tienda online llamado Koke, dedicado a la venta de Kombuchas, Kefir y chicha saborizadas naturalmente. ¿Qué debo tener en cuenta para persuadir a  las personas y compren los productos de la tienda?
+Prompt2: Quiero que me organices todas estas sugerencias en un prompt que resuma esta información para ser creada en HTML y CSS
+Prompt3: Construye una página de aterrizaje persuasiva para la tienda online Koke, siguiendo estas pautas:
+1.Título de la página:Utiliza un titular claro y atractivo
+2.Encabezado:
+Acompaña un mensaje de bienvenida y CTA que invite a los visitantes a registrarse y/o visitar la sección principal de ventas
+3.Sección de Diseño:
+Implementa una visual limpia y profesional con imágenes de alta calidad de los productos y paleta de colores que refleje naturalidad y frescura. Que la navegación sea sencila e intuitiva
+4.Sección de Titulares y Subtítulos:
+Utiliza resumen claro destacando beneficios de los productos y que las
+CTA sean llamativas y convincentes
+5.Sección de Descripción de Productos:
+Detalle los beneficios y características de cada producto e información transparente sobre ingredientes y procesos de elaboración
+6.Sección de Pruebas Sociales y Testimonios:
+Incluye testimonios reales de clientes satisfechos con valoraciones y reseñas de los productos
+7.Sección de Ofertas Especiales y Descuentos:
+Considera incluir promociones y descuentos temporales, como así también el espacio de programa de fidelización para clientes frecuentes
+8.Sección de Medios Visuales:
+Agrega demostrativos de preparación y consumo de las bebidas y fotografías profesionales de productos y sus empaques
+9.Sección de Información sobre la Marca:
+Define la historia y misión de Koke con sus valores de la marca como sostenibilidad, salud y bienestar
+10.Sección de Facilidad de Compra:
+Establece el proceso de compra simplificada con sus múltiples opciones de pago
+11.Sección de Optimización para Móviles:
+Implementa diseño responsivo para dispositivos móviles
+12.Sección de SEO y Velocidad de Carga:
+Priorizar la optimización SEO para atraer tráfico orgánico y con carga rápida
+Utiliza HTML% y CSS para estructurar y diseñar la página de manera efectiva, utiliza también la librería Bootstrap5 para el diseño responsivo asegurándote de mantener un diseño visualmente atractivo y funcional que resalte los punto anteriores de manera cohesiva.
+Prompt4:
+Add copyright-free images to each required section of the site
+Prompt5: I also want a background image for the header section and a simple footer
+Prompt6: Add a navbar with the correct options of the shop and add more style for the multimedia elements and some chill animations
+Prommpt7: I want to exclude Optimizado para móviles and Optimización SEO sections; in its place, add a contact form after Compra fácil section, and next to it a module wiht questions and answers
+######################################################
 29072024
 Chat gpt: 
 Contexto del objetivo, qué sugerencias de persuación para lograr dicho objetivo. 
