@@ -1,3 +1,12 @@
+08/08/2024
+Prompt 1 for gamma app
+Create a landing page for the Koke online shop with these key points:
+Clear headline with a welcome message and a CTA.Use a clean, professional look with high-quality images; simple navigation.Highlight product benefits with compelling CTAs.Clearly outline benefits, ingredients, and processes.Include real customer testimonials and ratings.Feature promotions, discounts, and loyalty programs.Show videos of product use and quality photos.Present Koke's mission and values. Simplify checkout with multiple payment options.
+######################################################
+Prompt 8: Give a background color  to the Compra fácil section  or separate it from Contacto and Preguntas  respuestas. 
+Include a button to accessing the options in compra fácil and also for Sobre Koke. Implement the necessary animations
+Prompt 9: Elaborate a better section of Lo que dicen nuestros clientes, perhaps with masonry or something alike. Also to Demostraciones en video and Galería de imágenes. Give only the required section of the code, both html and css
+######################################################
 01082024
 Sitio web de Kombuchas, Kefir y chicha saborizadas naturalmente
 Prompt1: Quiero construir una página de aterrizaje para una tienda online llamado Koke, dedicado a la venta de Kombuchas, Kefir y chicha saborizadas naturalmente. ¿Qué debo tener en cuenta para persuadir a  las personas y compren los productos de la tienda?
