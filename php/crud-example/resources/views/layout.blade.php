@@ -2,11 +2,14 @@
 <html>
 
 <head>
-    <title>CRUD Example</title>
+    <title>Task Management</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
-    @yield('content')
+    <div class="container">
+        @yield('content')
+    </div>
 </body>
 
 </html>

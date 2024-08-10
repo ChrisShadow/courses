@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('title');
             $table->text('description')->nullable();
+            $table->foreignId('user_id')->constrained()->onDelete('restrict');
             $table->timestamps();
         });
     }

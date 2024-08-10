@@ -14,10 +14,12 @@
                         "description": "Lista de tareas"
                     }
                 }
-            },
+            }
+        },
+        "/api/tasks/create": {
             "post": {
                 "summary": "Crear nueva tarea",
-                "operationId": "f803ebdb2300acdb7e93bbe8d0b9a2e8",
+                "operationId": "6f6a29e02e739fed1192ae648dfb6950",
                 "requestBody": {
                     "required": true,
                     "content": {
