@@ -1,0 +1,373 @@
+##############################
+21/08/2024
+New data perspectives
+As you have been learning, you can find data pretty much everywhere. Any time you observe and evaluate something in the world, you’re collecting and analyzing data. Your analysis helps you find easier ways of doing things, identify patterns to save you time, and discover surprising new perspectives that can completely change the way you experience things.
+
+Here is a real-life example of how one group of data analysts used the six steps of the data analysis process to improve their workplace and its business processes. Their story involves something called people analytics—also known as human resources analytics or workforce analytics. People analytics is the practice of collecting and analyzing data on the people who make up a company’s workforce in order to gain insights to improve how the company operates.
+
+Being a people analyst involves using data analysis to gain insights about employees and how they experience their work lives. The insights are used to define and create a more productive and empowering workplace. This can unlock employee potential, motivate people to perform at their best, and ensure a fair and inclusive company culture. 
+
+The six steps of the data analysis process that you have been learning in this program are: ask, prepare, process, analyze, share, and act. These six steps apply to any data analysis. Continue reading to learn how a team of people analysts used these six steps to answer a business question. 
+
+An organization was experiencing a high turnover rate among new hires. Many employees left the company before the end of their first year on the job. The analysts used the data analysis process to answer the following question: How can the organization improve the retention rate for new employees? 
+
+Here is a break down of what this team did, step by step. 
+
+ASK
+First up, the analysts needed to define what the project would look like and what would qualify as a successful result. So, to determine these things, they asked effective questions and collaborated with leaders and managers who were interested in the outcome of their people analysis. These were the kinds of questions they asked:
+
+What do you think new employees need to learn to be successful in their first year on the job? 
+
+Have you gathered data from new employees before? If so, may we have access to the historical data?
+
+Do you believe managers with higher retention rates offer new employees something extra or unique?
+
+What do you suspect is a leading cause of dissatisfaction among new employees?
+
+By what percentage would you like employee retention to increase in the next fiscal year?
+
+PREPARE
+It all started with solid preparation. The group built a timeline of three months and decided how they wanted to relay their progress to interested parties. Also during this step, the analysts identified what data they needed to achieve the successful result they identified in the previous step - in this case, the analysts chose to gather the data from an online survey of new employees. These were the things they did to prepare:
+
+They developed specific questions to ask about employee satisfaction with different business processes, such as hiring and onboarding, and their overall compensation. 
+
+They established rules for who would have access to the data collected - in this case, anyone outside the group wouldn't have access to the raw data, but could view summarized or aggregated data. For example, an individual's compensation wouldn't be available, but salary ranges for groups of individuals would be viewable. 
+
+They finalized what specific information would be gathered, and how best to present the data visually. The analysts brainstormed possible project- and data-related issues and how to avoid them. 
+
+PROCESS
+The group sent the survey out. Great analysts know how to respect both their data and the people who provide it. Since employees provided the data, it was important to make sure all employees gave their consent to participate. The data analysts also made sure employees understood how their data would be collected, stored, managed, and protected. Collecting and using data ethically is one of the responsibilities of data analysts. In order to maintain confidentiality and protect and store the data effectively, these were the steps they took:
+
+They restricted access to the data to a limited number of analysts. 
+
+They cleaned the data to make sure it was complete, correct, and relevant. Certain data was aggregated and summarized without revealing individual responses. 
+
+They uploaded raw data to an internal data warehouse for an additional layer of security. 
+
+ANALYZE
+Then, the analysts did what they do best: analyze! From the completed surveys, the data analysts discovered that an employee’s experience with certain processes was a key indicator of overall job satisfaction. These were their findings:
+
+Employees who experienced a long and complicated hiring process were most likely to leave the company. 
+
+Employees who experienced an efficient and transparent evaluation and feedback process were most likely to remain with the company. 
+
+The group knew it was important to document exactly what they found in the analysis, no matter what the results. To do otherwise would diminish trust in the survey process and reduce their ability to collect truthful data from employees in the future. 
+
+SHARE
+Just as they made sure the data was carefully protected, the analysts were also careful sharing the report. This is how they shared their findings:
+
+They shared the report with managers who met or exceeded the minimum number of direct reports with submitted responses to the survey. 
+
+They presented the results to the managers to make sure they had the full picture. 
+
+They asked the managers to personally deliver the results to their teams. 
+
+This process gave managers an opportunity to communicate the results with the right context. As a result, they could have productive team conversations about next steps to improve employee engagement. 
+
+ACT
+The last stage of the process for the team of analysts was to work with leaders within their company and decide how best to implement changes and take actions based on the findings. These were their recommendations: 
+
+Standardize the hiring and evaluation process for employees based on the most efficient and transparent practices. 
+
+Conduct the same survey annually and compare results with those from the previous year. 
+
+A year later, the same survey was distributed to employees. Analysts anticipated that a comparison between the two sets of results would indicate that the action plan worked. Turns out, the changes improved the retention rate for new employees and the actions taken by leaders were successful! 
+
+Is people analytics right for you?
+One of the many things that makes data analytics so exciting is that the problems are always different, the solutions need creativity, and the impact on others can be great—even life-changing or life-saving. As a data analyst, you can be part of these efforts. Maybe you’re even inspired to learn more about the field of people analytics. If so, consider learning more about this field and adding that research to your data analytics journal. You never know: One day soon, you could be helping a company create an amazing work environment for you and your colleagues!
+
+https://online.hbs.edu/blog/post/business-analytics-examples
+
+How data analysts approach tasks
+The data analysis process is composed of the six phases of ask, prepare, process, analyze, share, and act. Their purpose is to gain insights that drive informed decision-making. Earlier in this course, you explored a case study about a group of data analysts using the six phases of data analysis to improve employee retention at their company. In this reading, you’ll focus on the phases themselves and explore how a data analyst might use this process to help a fictional company make data-driven decisions about investing in training.
+
+The six phases of data analysis
+The data analysis process helps analysts break down business problems into a series of manageable tasks: 
+
+In the ask phase, you’ll work to understand the challenge to be solved or the question to be  answered. It will likely be assigned to you by stakeholders. As this is the ask phase, you’ll ask many questions to help you along the way. 
+
+Next, in the prepare phase, you’ll find and collect the data you'll need to answer your questions. You’ll identify data sources, gather data, and verify that it is accurate and useful for answering your questions. 
+
+The process phase is when you will clean and organize your data. Tasks you perform here include removing any inconsistencies; filling in missing values; and, in many cases, changing the data to a format that's easier to work with. Essentially, you’re ensuring the data is ready before you begin analysis.
+
+The analyze phase is when you do the necessary data analysis to uncover answers and solutions. Depending on the situation and the data, this could involve tasks such as calculating averages or counting items in categories so you can examine trends and patterns.
+
+Next comes the share phase, when you present your findings to decision-makers through a report, presentation, or data visualizations. As part of the share phase, you decide which medium you want to use to share your findings and select the data to include. Tools for presenting data visually include charts made in Google Sheets, Tableau, and R. 
+
+Last is the act phase, in which you and others in the company put the data insights into action. This could mean implementing a new business strategy, making changes to a website, or any other action that solves the initial problem. 
+
+Putting the process into practice
+Now, think about how the phases in this process can be applied to a business situation. 
+
+The retirement contribution dilemma
+The management team at a fictional midsized tech company, Geo-Flow, Inc., noticed that employee participation in the company’s retirement contribution program was lower than expected. The company had invested a lot of resources in establishing its world-class benefit program, with the goal of reducing employee turnover. Because so few employees were using the program, leaders wondered if they should develop educational training to explain the benefits to employees. They wanted to make a well-informed decision before committing to the investment, so they asked their data analytics department to make a recommendation. 
+
+The analysts used the six phases framework and began by defining the problem. They asked, “Are employees investing in the company's retirement contribution program?”And, if not, “Should we create an educational program to encourage participation?” Satisfied with their research questions, they prepared their analysis project by gathering data from HR, such as employee demographics, salary levels, and current retirement contributions.
+
+Next, they processed the data by cleaning and organizing it. They removed duplicates and data from individuals who had retired or left the company, then sorted the data by the employees’ ages, departments, and length of employment. Their analysis showed that some employee groups were less likely to contribute to the plan or to be aware that the company offers a matching contribution. They interpreted these results to mean that these employee groups were not receiving enough education on the company’s retirement contribution matching program. They also studied the data to find trends and insights and used data visualization to review their analysis by exploring it in different contexts.
+
+The analysts shared their findings with the management team using visualizations including bar and pie charts that illustrated the facts clearly so decision-makers could easily interpret the data. The report showed that, while overall participation was decent, some employee groups were not taking full advantage of the retirement program—but they might, if they knew more about the program and the matching contribution the company offers. 
+
+Based on these findings, the company took action, creating a targeted educational program focusing on the benefits of retirement contributions, specifically aimed at the employee groups identified as low contributors. Results showed that a few months after implementing this training, there was a significant increase in retirement contributions among the targeted groups.
+
+Iteration during the data analysis process
+The data analysis process is designed to build on itself, so the results from each step are the inputs for the next step. Keep in mind, however, that you might not always move through the steps linearly. For example, you might be in the analyze phase and find out your data was pulled from the wrong database. Or, you could learn while cleaning the data that your original question didn’t adequately define the problem. 
+
+In cases such as these, you may have to go back to an earlier stage and work through the process with new, better information. The important thing is not to skip steps and miss something that’s important. In fact, the biggest mistake analysts make when using this framework is looking for quick and easy answers. 
+
+Finally, make sure to review your work in each phase of the analysis. This helps you learn more about the situation and your own skill set, which will lead to the kind of continuous growth that helps data professionals succeed. 
+
+Key takeaways
+The six phases of the data analysis process help answer business challenges, such as understanding how to improve a retirement program. Additionally, iterating on and reviewing your work throughout the data analysis process is critical for obtaining quality results. 
+
+Origins of the data analysis process
+When you decided to join this program, you proved that you are a curious person. So now, tap into your curiosity and explore the origins of data analysis. No one knows when or why the first person decided to record data about people and things. But it was certainly a smart idea!  Data analysis is rooted in statistics, which has a pretty long history itself. Archaeologists mark the start of statistics in ancient Egypt with the building of the pyramids. The ancient Egyptians were masters of organizing data. They documented their calculations and theories on papyri (paper-like materials), which are now viewed as the earliest examples of spreadsheets and checklists. Today’s data analysts owe a lot to those brilliant scribes, who helped create a more technical and efficient process.
+
+It is time to enter the data analysis process—how industry professionals move from data to decision. All team members can drive success by planning work both upfront and at the end of the data analysis process. While the data analysis process is well known among experts, there isn't a single defined structure or single architecture that’s uniformly followed by every data analyst. But there are some shared fundamentals. This reading provides an overview of several processes, starting with the one that forms the foundation of the Google Data Analytics Certificate.
+
+The process presented as part of the Google Data Analytics Certificate is one that will be valuable to you as you keep moving forward in your career:
+
+Ask: business challenge, objective, or question
+
+Prepare: data generation, collection, storage, and data management
+
+Process: data cleaning and data integrity
+
+Analyze: data exploration, visualization, and analysis
+
+Share: communicating and interpreting results 
+
+Act:  putting  insights to work to solve the problem
+
+Understanding this process—and all of the iterations that helped make it popular—will be a big part of guiding your own analysis and your work in this program. Let’s go over a few other variations of the data analysis process.
+
+EMC's data analysis process
+EMC Corporation's data analytics process is cyclical with six steps:
+
+Discovery
+
+Pre-processing data
+
+Model planning
+
+Model building
+
+Communicate results
+
+Operationalize
+
+EMC Corporation is now Dell EMC. This model, created by David Dietrich, reflects the cyclical nature of typical business projects. The phases aren’t static milestones; each step connects and leads to the next, and eventually repeats. Key questions help analysts test whether they have accomplished enough to move forward and ensure that teams have spent enough time on each of the phases and don’t start modeling before the data is ready. It is a little different from the data analysis process on which this program is based on, but it has some core ideas in common: the first phase is interested in discovering and asking questions; data has to be prepared before it can be analyzed and used; and then findings should be shared and acted on.
+
+SAS's iterative process
+An iterative data analysis process was created by a company called SAS, a leading data analytics solutions provider. It can be used to produce repeatable, reliable, and predictive results: 
+
+Ask
+
+Prepare
+
+Explore
+
+Model
+
+Implement
+
+Act
+
+Evaluate
+
+The SAS model emphasizes the cyclical nature of their model by visualizing it as an infinity symbol. Its process has seven steps, many of which mirror the other models, like ask, prepare, model, and act. But this process is also a little different; it includes a step after the act phase designed to help analysts evaluate their solutions and potentially return to the ask phase again. 
+
+Project-based data analytics process 
+A project-based data analytics process has five simple steps:
+
+Identifying the problem
+
+Designing data requirements
+
+Pre-processing data
+
+Performing data analysis
+
+Visualizing data
+
+This data analytics project process was developed by Vignesh Prajapati. It doesn’t include the sixth phase, or the act phase. However, it still covers a lot of the same steps described. It begins with identifying the problem, preparing and processing data before analysis, and ends with data visualization.
+https://pingax.com/Data%20Analyst/understanding-data-analytics-project-life-cycle/
+
+
+##############################
+20/08/2024
+https://www.datacaptains.com/blog/guide-to-data-roles
+
+Every day, the amount of data out there grows and grows. So the ability to interpret it effectively is more important than ever before. Data analytics is becoming one of the fastest-growing and most rewarding career choices in the world.
+
+Currently, there are nearly 500,000 open jobs in data analytics, with a median entry-level salary of $92,000 and a 20% annual growth rate [Source: Lightcast™ US Job Postings (2022: Jan. 1, 2022 - Dec. 31, 2022)]. Companies in all kinds of industries need qualified data analysts to solve problems and help make the best possible business decisions. And once you complete this program, you’ll be prepared to make smart, strategic, data-driven recommendations for organizations of all kinds. 
+
+Throughout the courses in this program, you’ll complete many assignments and projects based on both the practical activities and the day-to-day life of a data analyst. Along the way, you’ll learn how to ask the right questions and understand objectives. You’ll also discover how to effectively clean and organize large amounts of data to make it ready for high-quality analysis. On top of that, you’ll gain experience using all kinds of tools and techniques that will help you recognize patterns and uncover relationships between data points. Further, to help you communicate the results of your analysis, you’ll learn how to design visuals and dashboards. There’s even an opportunity to create a case study, which you can highlight in your resume to demonstrate what you have learned to potential employers. 
+
+1.Foundations
+What you will learn:
+Real-life roles and responsibilities of a junior data analyst
+How businesses transform data into actionable insights
+Spreadsheet basics
+Database and query basics
+Data visualization basics
+
+Skill sets you will build:
+Using data in everyday life
+Thinking analytically
+Applying tools from the data analytics toolkit
+Showing trends and patterns with data visualizations
+Ensuring your data analysis is fair
+
+2.Ask
+What you will learn:
+How data analysts solve problems with data
+The use of analytics for making data-driven decisions
+Spreadsheet formulas and functions
+Dashboard basics, including an introduction to Tableau
+Data reporting basics
+
+Skill sets you will build:
+Asking SMART and effective questions
+Structuring how you think
+Summarizing data
+Putting things into context
+Managing team and stakeholder expectations
+Problem-solving and conflict-resolution
+
+3.Prepare
+
+What you will learn:
+How data is generated
+Features of different data types, fields, and values
+Database structures
+The function of metadata in data analytics
+Structured Query Language (SQL) functions
+
+Skill sets you will build:
+Ensuring ethical data analysis practices
+Addressing issues of bias and credibility
+Accessing databases and importing data
+Writing simple queries
+Organizing and protecting data
+Connecting with the data community (optional)
+
+4.Process
+What you will learn:
+Data integrity and the importance of clean data
+The tools and processes used by data analysts to clean data
+Data-cleaning verification and reports
+Statistics, hypothesis testing, and margin of error
+Resume building and interpretation of job postings (optional)
+
+Skill sets you will build:
+Connecting business objectives to data analysis
+Identifying clean and dirty data
+Cleaning small datasets using spreadsheet tools
+Cleaning large datasets by writing SQL queries
+Documenting data-cleaning processes
+
+5.Analyze
+What you will learn:
+Steps data analysts take to organize data
+How to combine data from multiple sources
+Spreadsheet calculations and pivot tables
+SQL calculations
+Temporary tables
+Data validation
+
+Skill sets you will build:
+Sorting data in spreadsheets and by writing SQL queries
+Filtering data in spreadsheets and by writing SQL queries
+Converting data
+Formatting data
+Substantiating data analysis processes
+Seeking feedback and support from others during data analysis
+
+6.Share
+What you will learn:
+Design thinking
+How data analysts use visualizations to communicate about data
+The benefits of Tableau for presenting data analysis findings
+Data-driven storytelling
+Dashboards and dashboard filters
+Strategies for creating an effective data presentation
+
+Skill sets you will build:
+Creating visualizations and dashboards in Tableau
+Addressing accessibility issues when communicating about data
+Understanding the purpose of different business communication tools
+Telling a data-driven story
+Presenting to others about data
+Answering questions about data
+
+7.Act
+What you will learn:
+Programming languages and environments
+R packages
+R functions, variables, data types, pipes, and vectors
+R data frames
+Bias and credibility in R
+R visualization tools
+R Markdown for documentation, creating structure, and emphasis
+
+Skill sets you will build:
+Coding in R
+Writing functions in R
+Accessing data in R
+Cleaning data in R
+Generating data visualizations in R
+Reporting on data analysis to stakeholders
+
+8.Capstone
+What you will learn:
+How a data analytics portfolio distinguishes you from other candidates
+Practical, real-world problem-solving
+Strategies for extracting insights from data
+Clear presentation of data findings
+Motivation and ability to take initiative
+
+Skill sets you will build:
+Building a portfolio
+Increasing your employability
+Showcasing your data analytics knowledge, skill, and technical expertise
+Sharing your work during an interview
+Communicating your unique value proposition to a potential employer
+
+What is Your Career Identity? | Google Career Certificates
+https://youtu.be/_xbT4qMrot4
+Career identity
+1.Strengths: what skills, knowledge, and talents set me apart?
+2.Motivations: what fuels and motivates me most?
+3.Values: What values guide me?
+Career identity statement
+I am a (role(s)) with (#of years) experience doing (accomplishment). My greatest strength is (strength), and I have a talent for (strength). I am passionate about (motivation), and I value (value).
+
+Presentation, original
+Hi, best regards to everyone. My name is Cris and I am from Paraguay, south america. I live in Asuncion, the capital of the country. 
+I hava a friend who recently went to Australia for acadamics reasons and he encourage me to take a look about the world of data science , basically because he works in the field and also because I work as junior sotware developer. Another reason was about my study which is in computer science emphasis on data bases, which I am about to finish it. So, that was lik half and a month ago and i finally decided to start here with Google's certificate. 
+One of my greates expectation is to learn what data analysts do and how to improve all the necesary skills to be a good one. I also find interesting other roles of data such as engineering and machine learning, but for now analysis is a good start. I will probably have got any job related with the field by the time I finished the  course, so I hope the best for everyone too. 
+
+Gpt version
+Greetings, everyone.
+
+My name is Cris, and I am from Paraguay, South America. I currently reside in Asuncion, the capital city of the country.
+
+I have a friend who recently went to Australia for academic reasons. He encouraged me to explore the world of data science, primarily because he works in the field and also because I work as a junior software developer. Another motivating factor is my current study, which is focused on computer science with an emphasis on databases. I am nearing the completion of my degree.
+
+About a month and a half ago, I finally decided to begin my journey in data science by enrolling in Google’s Data Analytics certificate program.
+
+One of my greatest expectations is to learn what data analysts do and to develop the necessary skills to excel in this role. I am also intrigued by other data-related roles, such as data engineering and machine learning, but for now, data analysis seems like a great starting point. I hope to secure a job related to the field by the time I complete the course.
+
+I wish everyone the best in their respective journeys as well.
+
+Final version
+
+Hello, my name is Cris, and I’m from Asuncion, Paraguay. I work as a junior software developer and am finishing my degree in computer science with emphasis on databases.
+A close friend introduced me to data science. The interest in expanding my skills led me to start with Google’s certificate program.
+I expect to understand the role of data analysts and to develop the necessary skills to succeed in this profession. While I’m also interested in data engineering and machine learning, I believe that data analysis is a solid foundation. When I finish the course, I hope to secure a position in this field.
+I wish everyone the best in their respective journeys as well.
+
+I think it will help me to further improve my skills while working with data.
+
+

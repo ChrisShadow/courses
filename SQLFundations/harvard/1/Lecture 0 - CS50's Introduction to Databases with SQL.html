@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://cs50.harvard.edu/sql/2024/notes/0/ -->
+<html lang="en-us" class="wf-ptsans-n4-active wf-ptsans-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        
+        <meta name="viewport" content="initial-scale=1, width=device-width"><meta property="og:description" content="An introduction to databases using a language called SQL.">
+
+        <meta property="og:image" content="https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=378,height=auto,quality=85,format=webp/media/course/image/3e45c431-10df-423e-9f03-fb98b713cd4a-2397c9098976.png"><meta property="og:title" content="Lecture 0 - CS50&#39;s Introduction to Databases with SQL">
+
+        <link href="https://cs50.harvard.edu/sql/2024/favicon.ico?1721794718" rel="icon">
+
+        <!-- https://fonts.google.com/specimen/PT+Sans?query=PT+Sans&selection.family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700 -->
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/webfont.js.descarga"></script>
+
+        <!-- https://getbootstrap.com/docs/ -->
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/jquery.min.js.descarga"></script>
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/bootstrap.bundle.min.js.descarga"></script>
+
+        <!-- https://bootstrap-table.com/docs/getting-started/introduction/ -->
+        <link href="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/bootstrap-table.min.css" rel="stylesheet">
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/bootstrap-table.min.js.descarga"></script>
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/bootstrap-table-mobile.min.js.descarga"></script>
+
+        <!-- https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use -->
+        
+        <link crossorigin="anonymous" href="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/a6e66aa089.css" rel="stylesheet">
+        
+
+        <!-- https://moment.github.io/luxon/ -->
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/luxon.min.js.descarga"></script>
+
+        <!-- http://docs.mathjax.org/ -->
+        <!-- http://docs.mathjax.org/en/latest/options/output/chtml.html?highlight=displayAlign#the-configuration-block -->
+        <script>
+            MathJax = {
+               chtml: {
+                    displayAlign: "left"
+                }
+            };
+        </script>
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/tex-chtml.js.descarga"></script><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style>
+
+        <!-- https://github.com/verlok/vanilla-lazyload -->
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/intersection-observer.js.descarga"></script>
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/lazyload.min.js.descarga"></script>
+
+        <!-- https://github.com/davidjbradshaw/iframe-resizer -->
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/iframeResizer.min.js.descarga"></script>
+
+        <!-- https://github.com/scratchblocks/scratchblocks/releases -->
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/scratchblocks.min.js.descarga"></script><style><![CDATA[.sb-label{font-family:Lucida Grande,Verdana,Arial,DejaVu Sans,sans-serif;font-weight:700;fill:#fff;font-size:10px;word-spacing:1px}.sb-obsolete{fill:#d42828}.sb-motion{fill:#4a6cd4}.sb-looks{fill:#8a55d7}.sb-sound{fill:#bb42c3}.sb-pen{fill:#0e9a6c}.sb-events{fill:#c88330}.sb-control{fill:#e1a91a}.sb-sensing{fill:#2ca5e2}.sb-operators{fill:#5cb712}.sb-variables{fill:#ee7d16}.sb-list{fill:#cc5b22}.sb-custom{fill:#632d99}.sb-custom-arg{fill:#5947b1}.sb-extension{fill:#4b4a60}.sb-grey{fill:#969696}.sb-bevel{filter:url(#bevelFilter)}.sb-input{filter:url(#inputBevelFilter)}.sb-input-number,.sb-input-number-dropdown,.sb-input-string{fill:#fff}.sb-literal-dropdown,.sb-literal-number,.sb-literal-number-dropdown,.sb-literal-string{font-weight:400;font-size:9px;word-spacing:0}.sb-literal-number,.sb-literal-number-dropdown,.sb-literal-string{fill:#000}.sb-darker{filter:url(#inputDarkFilter)}.sb-outline{stroke:#fff;stroke-opacity:.2;stroke-width:2;fill:none}.sb-comment,.sb-define-hat-cap{stroke:#632d99;stroke-width:1;fill:#8e2ec2}.sb-comment{fill:#ffffa5;stroke:#d0d1d2}.sb-comment-line{fill:#ffff80}.sb-comment-label{font-family:Helvetica,Arial,DejaVu Sans,sans-serif;font-weight:700;fill:#5c5d5f;word-spacing:0;font-size:12px}.sb-diff{fill:none;stroke:#000}.sb-diff-ins{stroke-width:2px}.sb-diff-del{stroke-width:3px}]]></style><style><![CDATA[.sb3-label{font:500 12pt Helvetica Neue,Helvetica,sans-serif;word-spacing:1pt}.sb3-literal-dropdown,.sb3-literal-number,.sb3-literal-number-dropdown,.sb3-literal-string{word-spacing:0}.sb3-diff{fill:none;stroke:#000}.sb3-diff-ins{stroke-width:2px}.sb3-diff-del{stroke-width:3px}svg .sb3-motion{fill:#4c97ff;stroke:#3373cc}svg .sb3-motion-alt{fill:#4280d7}svg .sb3-motion-dark{fill:#3373cc}svg .sb3-looks{fill:#96f;stroke:#774dcb}svg .sb3-looks-alt{fill:#855cd6}svg .sb3-looks-dark{fill:#774dcb}svg .sb3-sound{fill:#cf63cf;stroke:#bd42bd}svg .sb3-sound-alt{fill:#c94fc9}svg .sb3-sound-dark{fill:#bd42bd}svg .sb3-control{fill:#ffab19;stroke:#cf8b17}svg .sb3-control-alt{fill:#ec9c13}svg .sb3-control-dark{fill:#cf8b17}svg .sb3-events{fill:#ffbf00;stroke:#c90}svg .sb3-events-alt{fill:#e6ac00}svg .sb3-events-dark{fill:#c90}svg .sb3-sensing{fill:#5cb1d6;stroke:#2e8eb8}svg .sb3-sensing-alt{fill:#47a8d1}svg .sb3-sensing-dark{fill:#2e8eb8}svg .sb3-operators{fill:#59c059;stroke:#389438}svg .sb3-operators-alt{fill:#46b946}svg .sb3-operators-dark{fill:#389438}svg .sb3-variables{fill:#ff8c1a;stroke:#db6e00}svg .sb3-variables-alt{fill:#ff8000}svg .sb3-variables-dark{fill:#db6e00}svg .sb3-list{fill:#ff661a;stroke:#e64d00}svg .sb3-list-alt{fill:#f50}svg .sb3-list-dark{fill:#e64d00}svg .sb3-custom{fill:#ff6680;stroke:#f35}svg .sb3-custom-alt{fill:#ff4d6a}svg .sb3-custom-dark{fill:#f35}svg .sb3-extension{fill:#0fbd8c;stroke:#0b8e69}svg .sb3-extension-alt{fill:#0da57a}svg .sb3-extension-dark{fill:#0b8e69}svg .sb3-obsolete{fill:#ed4242;stroke:#ca2b2b}svg .sb3-obsolete-alt{fill:#db3333}svg .sb3-obsolete-dark{fill:#ca2b2b}svg .sb3-grey{fill:#bfbfbf;stroke:#909090}svg .sb3-grey-alt{fill:#b2b2b2}svg .sb3-grey-dark{fill:#909090}svg .sb3-label{fill:#fff}svg .sb3-input-color{stroke:#fff}svg .sb3-input-number,svg .sb3-input-string{fill:#fff}svg .sb3-literal-number,svg .sb3-literal-string{fill:#575e75}svg .sb3-custom-arg{fill:#ff6680;stroke:#f35}svg.scratchblocks-style-scratch3-high-contrast .sb3-motion{fill:#80b5ff;stroke:#3373cc}svg.scratchblocks-style-scratch3-high-contrast .sb3-motion-alt{fill:#b3d2ff}svg.scratchblocks-style-scratch3-high-contrast .sb3-motion-dark{fill:#3373cc}svg.scratchblocks-style-scratch3-high-contrast .sb3-looks{fill:#ccb3ff;stroke:#774dcb}svg.scratchblocks-style-scratch3-high-contrast .sb3-looks-alt{fill:#dcf}svg.scratchblocks-style-scratch3-high-contrast .sb3-looks-dark{fill:#774dcb}svg.scratchblocks-style-scratch3-high-contrast .sb3-sound{fill:#e19de1;stroke:#bd42bd}svg.scratchblocks-style-scratch3-high-contrast .sb3-sound-alt{fill:#ffb3ff}svg.scratchblocks-style-scratch3-high-contrast .sb3-sound-dark{fill:#bd42bd}svg.scratchblocks-style-scratch3-high-contrast .sb3-control{fill:#ffbe4c;stroke:#cf8b17}svg.scratchblocks-style-scratch3-high-contrast .sb3-control-alt{fill:#ffda99}svg.scratchblocks-style-scratch3-high-contrast .sb3-control-dark{fill:#cf8b17}svg.scratchblocks-style-scratch3-high-contrast .sb3-events{fill:#ffd966;stroke:#c90}svg.scratchblocks-style-scratch3-high-contrast .sb3-events-alt{fill:#ffecb3}svg.scratchblocks-style-scratch3-high-contrast .sb3-events-dark{fill:#c90}svg.scratchblocks-style-scratch3-high-contrast .sb3-sensing{fill:#85c4e0;stroke:#2e8eb8}svg.scratchblocks-style-scratch3-high-contrast .sb3-sensing-alt{fill:#aed8ea}svg.scratchblocks-style-scratch3-high-contrast .sb3-sensing-dark{fill:#2e8eb8}svg.scratchblocks-style-scratch3-high-contrast .sb3-operators{fill:#7ece7e;stroke:#389438}svg.scratchblocks-style-scratch3-high-contrast .sb3-operators-alt{fill:#b5e3b5}svg.scratchblocks-style-scratch3-high-contrast .sb3-operators-dark{fill:#389438}svg.scratchblocks-style-scratch3-high-contrast .sb3-variables{fill:#ffa54c;stroke:#db6e00}svg.scratchblocks-style-scratch3-high-contrast .sb3-variables-alt{fill:#fc9}svg.scratchblocks-style-scratch3-high-contrast .sb3-variables-dark{fill:#db6e00}svg.scratchblocks-style-scratch3-high-contrast .sb3-list{fill:#f96;stroke:#e64d00}svg.scratchblocks-style-scratch3-high-contrast .sb3-list-alt{fill:#ffcab0}svg.scratchblocks-style-scratch3-high-contrast .sb3-list-dark{fill:#e64d00}svg.scratchblocks-style-scratch3-high-contrast .sb3-custom{fill:#f9a;stroke:#e64d00}svg.scratchblocks-style-scratch3-high-contrast .sb3-custom-alt{fill:#ffccd5}svg.scratchblocks-style-scratch3-high-contrast .sb3-custom-dark{fill:#e64d00}svg.scratchblocks-style-scratch3-high-contrast .sb3-extension{fill:#13ecaf;stroke:#0b8e69}svg.scratchblocks-style-scratch3-high-contrast .sb3-extension-alt{fill:#75f0cd}svg.scratchblocks-style-scratch3-high-contrast .sb3-extension-dark{fill:#0b8e69}svg.scratchblocks-style-scratch3-high-contrast .sb3-obsolete{fill:#fc6666;stroke:#d32121}svg.scratchblocks-style-scratch3-high-contrast .sb3-obsolete-alt{fill:#fcb0b0}svg.scratchblocks-style-scratch3-high-contrast .sb3-obsolete-dark{fill:#d32121}svg.scratchblocks-style-scratch3-high-contrast .sb3-grey{fill:#bfbfbf;stroke:#959595}svg.scratchblocks-style-scratch3-high-contrast .sb3-grey-alt{fill:#b2b2b2}svg.scratchblocks-style-scratch3-high-contrast .sb3-grey-dark{fill:#959595}svg.scratchblocks-style-scratch3-high-contrast .sb3-label{fill:#000}svg.scratchblocks-style-scratch3-high-contrast .sb3-input-color{stroke:#fff}svg.scratchblocks-style-scratch3-high-contrast .sb3-input-number,svg.scratchblocks-style-scratch3-high-contrast .sb3-input-string{fill:#fff}svg.scratchblocks-style-scratch3-high-contrast .sb3-literal-number,svg.scratchblocks-style-scratch3-high-contrast .sb3-literal-string{fill:#000}svg.scratchblocks-style-scratch3-high-contrast .sb3-custom-arg{fill:#f9a;stroke:#e64d00}.sb3-comment{fill:#ffffa5;stroke:#d0d1d2;stroke-width:1}.sb3-comment-line{fill:#ffff80}.sb3-comment-label,.sb3-label.sb3-comment-label{font:400 12pt Helvetica Neue,Helvetica,sans-serif;fill:#000;word-spacing:0}]]></style>
+
+        <!-- https://mermaid-js.github.io/ -->
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/mermaid.min.js.descarga"></script>
+
+        <!-- https://github.com/twitter/twemoji -->
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/twemoji.min.js.descarga"></script>
+
+        
+
+        <link href="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/page.css" rel="stylesheet">
+        <link rel="stylesheet" href="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/css" media="all"><script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/jekyll-theme-cs50.js.descarga"></script>
+
+        <script>
+            window.CS50 = {
+                local: {"day":"numeric","hour":"numeric","minute":"numeric","month":"long","timeZoneName":"short","weekday":"long","year":"numeric"},
+                locale: "en",
+                tz: "America/New_York"
+            };
+        </script>
+
+        <title>Lecture 0 - CS50's Introduction to Databases with SQL</title>
+
+
+    <style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cs50.harvard.edu/sql/2024/assets/mathjax/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style></head>
+
+    <body class="">
+
+        
+        
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <aside class="col-lg" style="height: 647px; top: 0px;">
+ 
+                    <header><h1 data-id="cs50s-introduction-to-databases-with-sql"><a href="https://cs50.harvard.edu/sql/2024/">CS50’s Introduction to Databases with SQL</a></h1>
+
+<p>OpenCourseWare</p>
+
+<p><a class="pr-1 small" href="https://cs50.harvard.edu/donate">Donate<i aria-hidden="true" class="fas fa-external-link-alt ps-2"></i></a></p>
+
+<p class="small"><a href="https://carterzenke.me/">Carter Zenke</a><br>
+<a href="mailto:carter@cs50.harvard.edu">carter@cs50.harvard.edu</a>
+<br>
+<a class="mr-1" href="https://github.com/carterzenke"><i aria-hidden="true" class="fab fa-github" title="GitHub"></i><span class="sr-only">GitHub</span></a>
+<a class="mr-1" href="https://www.linkedin.com/in/carterzenke/"><i aria-hidden="true" class="fab fa-linkedin" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a></p>
+
+<p class="small"><a href="https://cs.harvard.edu/malan/">David J. Malan</a>
+<br>
+<a href="mailto:malan@harvard.edu">malan@harvard.edu</a>
+<br>
+<a class="mr-1" href="https://www.facebook.com/dmalan"><i aria-hidden="true" class="fa-brands fa-facebook-f" title="Facebook"></i><span class="sr-only">Facebook</span></a>
+<a class="mr-1" href="https://github.com/dmalan"><i aria-hidden="true" class="fa-brands fa-github" title="GitHub"></i><span class="sr-only">GitHub</span></a>
+<a class="mr-1" href="https://www.instagram.com/davidjmalan/"><i aria-hidden="true" class="fa-brands fa-instagram" title="Instagram"></i><span class="sr-only">Instagram</span></a>
+<a class="mr-1" href="https://www.linkedin.com/in/malan/"><i aria-hidden="true" class="fa-brands fa-linkedin" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a>
+<a class="mr-1" href="https://www.reddit.com/user/davidjmalan"><i aria-hidden="true" class="fa-brands fa-reddit-alien" title="Reddit"></i><span class="sr-only">Reddit</span></a>
+<a class="mr-1" href="https://www.threads.net/@davidjmalan"><i aria-hidden="true" class="fa-brands fa-threads" title="Threads"></i><span class="sr-only">Threads</span></a>
+<a class="mr-1" href="https://twitter.com/davidjmalan"><i aria-hidden="true" class="fa-brands fa-twitter" title="Twitter"></i><span class="sr-only">Twitter</span></a></p></header>
+
+                    
+
+                    <button aria-controls="nav" aria-expanded="false" class="btn btn-sm collapsed d-lg-none" data-bs-target="aside &gt; nav" data-bs-toggle="collapse">
+                        Menu
+                    </button>
+
+                    <nav class="collapse d-lg-block" id="nav"><hr>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/x/2023/ready/"><i class="fa-solid fa-duck me-2"></i>Ready Player 50</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/sql/2024/zoom/"><i class="fa-solid fa-video me-2"></i>Zoom Meetings</a></li>
+</ul>
+
+<!-- Tools -->
+<hr class="small">
+
+<ul class="small fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.ai/"><i class="fa-solid fa-duck pe-2 text-decoration-none"></i>CS50.ai</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.edx.org/ed"><i class="fa-solid fa-comment-question pe-2 text-decoration-none"></i>Ed Discussion</a> for Q&amp;A</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.dev/"><i class="fa-solid fa-laptop pe-2 text-decoration-none"></i>Visual Studio Code</a></li>
+</ul>
+
+<!-- Highlights -->
+<hr>
+
+<ul class="small fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/sql/2024/new/">What’s new for 2024?</a></li>
+</ul>
+
+<!-- Course Nav -->
+<hr>
+
+<ol start="0">
+  <li><a href="https://cs50.harvard.edu/sql/2024/weeks/0/">Querying</a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/weeks/1/">Relating</a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/weeks/2/">Designing</a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/weeks/3/">Writing</a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/weeks/4/">Viewing</a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/weeks/5/">Optimizing</a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/weeks/6/">Scaling</a></li>
+</ol>
+
+<hr>
+
+<!-- Final project spec, seminars, shorts -->
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/sql/2024/project/">Final Project</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span></li>
+</ul>
+
+<!-- Items that might usually appear in an academic syllabus -->
+<hr>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/sql/2024/honesty/">Academic Honesty</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/sql/2024/certificate/">CS50 Certificate</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/sql/2024/faqs/">FAQs</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.me/cs50sql">Gradebook</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/sql/2024/staff/">Staff</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span></li>
+</ul>
+
+<!-- Where to watch or take the class course -->
+<hr>
+
+<ul class="small fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://apps.apple.com/us/app/cs50/id1631064453">Apple TV</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.edx.org/sql">edX</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://play.google.com/store/apps/details?id=edu.harvard.cs50.googletv">Google TV</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://web.dce.harvard.edu/extension/csci/e/151">Harvard Extension School</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://web.dce.harvard.edu/summer/csci/s/151">Harvard Summer School</a></li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.youtube.com/playlist?list=PLhQjrBD2T382v1MBjNOhPu9SiJ1fsD4C0">YouTube</a></li>
+</ul>
+
+<!-- Manual page, style guide, other docs -->
+
+<!-- Status Page -->
+<hr>
+
+<ul class="small fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.statuspage.io/">Status Page</a></li>
+</ul>
+
+<!-- Communities -->
+<hr>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/sql/2024/communities/"><strong>Communities</strong></a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.bsky.social/">Bluesky</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.clubhouse.com/club/cs50">Clubhouse</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://discord.gg/cs50">Discord</a> <span class="badge bg-light ms-1 py-1 rounded-pill text-dark">Q&amp;A</span></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.edx.org/ed">Ed</a> <span class="badge bg-light ms-1 py-1 rounded-pill text-dark">Q&amp;A</span></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.facebook.com/groups/cs50/">Facebook Group</a> <span class="badge bg-light ms-1 py-1 rounded-pill text-dark">Q&amp;A</span></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.facebook.com/cs50/">Facebook Page</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://github.com/cs50">GitHub</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://gitter.im/cs50/x">Gitter</a> <span class="badge bg-light ms-1 py-1 rounded-pill text-dark">Q&amp;A</span></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://instagram.com/cs50">Instagram</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.linkedin.com/groups/7437240/">LinkedIn Group</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.linkedin.com/school/CS50/">LinkedIn Page</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.medium.com/">Medium</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.quora.com/topic/CS50">Quora</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.reddit.com/r/cs50/">Reddit</a> <span class="badge bg-light ms-1 py-1 rounded-pill text-dark">Q&amp;A</span></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.edx.org/slack">Slack</a> <span class="badge bg-light ms-1 py-1 rounded-pill text-dark">Q&amp;A</span></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.snapchat.com/add/cs50">Snapchat</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://soundcloud.com/cs50">SoundCloud</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.stackexchange.com/">Stack Exchange</a> <span class="badge bg-light ms-1 py-1 rounded-pill text-dark">Q&amp;A</span></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://t.me/cs50x">Telegram</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.tiktok.com/@cs50">TikTok</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://www.threads.net/@cs50">Threads</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://twitter.com/cs50">Twitter Account</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://twitter.com/i/communities/1722308663522594923">Twitter Community</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="http://www.youtube.com/subscription_center?add_user=cs50tv">YouTube</a></li>
+</ul>
+
+<!-- Courses -->
+<hr>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/sql/2024/courses/"><strong>Courses</strong></a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/x">CS50x</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/ai">CS50 AI</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/business">CS50 Business</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="https://cs50.harvard.edu/cybersecurity">CS50 Cybersecurity</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="http://cs50.harvard.edu/law">CS50 for Lawyers</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="http://cs50.harvard.edu/games">CS50 Games</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="http://cs50.harvard.edu/python">CS50 Python</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="http://cs50.harvard.edu/r">CS50 R</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="http://cs50.harvard.edu/scratch">CS50 Scratch</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="http://cs50.harvard.edu/sql">CS50 SQL</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="http://cs50.harvard.edu/technology">CS50 Technology</a></li>
+  <li data-marker="*" class="small"><span class="fa-li"><i class="fas fa-square"></i></span><a href="http://cs50.harvard.edu/web">CS50 Web</a></li>
+</ul>
+
+<!-- Harvard Shop -->
+<hr>
+
+<p><a href="https://cs50.harvardshop.com/"><img src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/shop.png" alt="Harvard Shop"></a></p>
+
+<!-- Legal -->
+<hr>
+
+<p><a href="https://cs50.harvard.edu/sql/2024/license/" class="small"><i class="fab fa-creative-commons me-1"></i>License</a></p></nav>
+
+                    <footer></footer>
+
+                </aside>
+
+                <main class="col-lg" style="margin-bottom: 487px; margin-top: 0px;">
+
+                    <a data-id="" id="lecture-0" style="top: 0px;"></a><h1 class="no_toc"><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#lecture-0">Lecture 0</a></h1>
+
+<ul id="markdown-toc">
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#what-is-a-database" id="markdown-toc-what-is-a-database">What is a Database?</a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#sql" id="markdown-toc-sql">SQL</a>    <ul>
+      <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#questions" id="markdown-toc-questions">Questions</a></li>
+    </ul>
+  </li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#getting-started-with-sqlite" id="markdown-toc-getting-started-with-sqlite">Getting Started with SQLite</a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#terminal-tips" id="markdown-toc-terminal-tips">Terminal Tips</a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#select" id="markdown-toc-select"><code class="language-plaintext highlighter-rouge">SELECT</code></a>    <ul>
+      <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#questions-1" id="markdown-toc-questions-1">Questions</a></li>
+    </ul>
+  </li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#limit" id="markdown-toc-limit"><code class="language-plaintext highlighter-rouge">LIMIT</code></a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#where" id="markdown-toc-where"><code class="language-plaintext highlighter-rouge">WHERE</code></a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#null" id="markdown-toc-null"><code class="language-plaintext highlighter-rouge">NULL</code></a></li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#like" id="markdown-toc-like"><code class="language-plaintext highlighter-rouge">LIKE</code></a>    <ul>
+      <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#questions-2" id="markdown-toc-questions-2">Questions</a></li>
+    </ul>
+  </li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#ranges" id="markdown-toc-ranges">Ranges</a>    <ul>
+      <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#questions-3" id="markdown-toc-questions-3">Questions</a></li>
+    </ul>
+  </li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#order-by" id="markdown-toc-order-by"><code class="language-plaintext highlighter-rouge">ORDER BY</code></a>    <ul>
+      <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#questions-4" id="markdown-toc-questions-4">Questions</a></li>
+    </ul>
+  </li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#aggregate-functions" id="markdown-toc-aggregate-functions">Aggregate Functions</a>    <ul>
+      <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#questions-5" id="markdown-toc-questions-5">Questions</a></li>
+    </ul>
+  </li>
+  <li><a href="https://cs50.harvard.edu/sql/2024/notes/0/#fin" id="markdown-toc-fin">Fin</a></li>
+</ul>
+
+<a data-id="" id="introduction" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#introduction">Introduction</a></h2>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Databases (and SQL) are tools that can be used to interact with, store, and manage information. Although the tools we’re using in this course are new, a database is an age-old idea.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Look at this diagram from a few thousand years ago. It has rows and columns, and seems to contain stipends for workers at a temple. One could call this diagram a table, or even a spreadsheet.</li>
+</ul>
+
+<p><img src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/templeworkerstipends.jpg" alt="Table with Temple Workers&#39; Stipends"></p>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Based on what we see in the diagram above, we can conclude that:
+    <ul class="fa-ul">
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>A table stores some set of information (here, worker stipends).</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Every row in a table stores one item in that set (here, one worker).</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Every column has some attribute of that item (here, the stipend for a particular month).</li>
+    </ul>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>
+    <p>Let us now consider a modern context. Say you are a librarian tasked with organizing information about the book titles and authors in this diagram.</p>
+
+    <p class="w-50"><img src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/books.jpg" alt="&quot;Book Titles and Authors - Unorganized&quot;"></p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>
+    <p>One way of organizing the information would be to have each book title followed by its author, as below.</p>
+
+    <p class="w-50"><img src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/bookstable.jpg" alt="&quot;Table with Book Titles followed by Author&quot;"></p>
+
+    <ul class="fa-ul">
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Notice that each book is now a row in this table.</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Every row has two columns — each a different attribute of the book (book title and author).</li>
+    </ul>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>
+    <p>In today’s information age, we can store our tables using software like Google Sheets instead of paper<img draggable="false" class="emoji" alt="📝" src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/1f4dd.png"> or stone tablets<img draggable="false" class="emoji" alt="🪨" src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/1faa8.png">. However, in this course we will talk about databases and not spreadsheets.</p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Three reasons to move beyond spreadsheets to databases are
+    <ul class="fa-ul">
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><strong>Scale</strong>: Databases can store not just items numbering to tens of thousands but even millions and billions.</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><strong>Update Capacity</strong>: Databases are able to handle multiple updates of data in a second.</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><strong>Speed</strong>: Databases allow faster look-up of information. This is because databases provide us with access to different algorithms to retrieve information. In contrast, spreadsheets that merely allow the use of Ctrl+F or Cmd+F to go through hits one at a time.</li>
+    </ul>
+  </li>
+</ul>
+
+<a data-id="" id="what-is-a-database" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#what-is-a-database">What is a Database?</a></h2>
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>A database is a way of organizing data such that you can perform four operations on it
+    <ul class="fa-ul">
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>create</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>read</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>update</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>delete</li>
+    </ul>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>A database management system (DBMS) is a way to interact with a database using a graphical interface or textual language.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Examples of DBMS: MySQL, Oracle, PostgreSQL, SQLite, Microsoft Access, MongoDB etc.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>The choice of a DBMS would rest on factors like
+    <ul class="fa-ul">
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><strong>Cost</strong>: proprietary vs. free software,</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><strong>Amount of support</strong>: free and open source software like MySQL, PostgreSQL and SQLite come with the downside of having to set up the database yourself,</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><strong>Weight</strong>: more fully-featured systems like MySQL or PostgreSQL are heavier and require more computation to run than systems like SQLite.</li>
+    </ul>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>In this course, we will start with SQLite and then move on to MySQL and PostgreSQL.</li>
+</ul>
+
+<a data-id="" id="sql" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#sql">SQL</a></h2>
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>SQL stands for Structured Query Language. It is a language used to interact with databases, via which you can create, read, update, and delete data in a database. Some important notes about SQL
+    <ul class="fa-ul">
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>it is structured, as we’ll see in this course,</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>it has some keywords that can be used to interact with the database, and</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>it is a query language — it can be used to ask questions of data inside a database.</li>
+    </ul>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>In this lesson, we will learn how to write some simple SQL queries.</li>
+</ul>
+
+<a data-id="" id="questions" style="top: 0px;"></a><h3><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#questions">Questions</a></h3>
+<blockquote>
+  <p>Are there subsets of SQL?</p>
+</blockquote>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>SQL is a standard both of the American National Standards Institute (ANSI) and the International Organization for Standardization (ISO). Most DBMS support some subset of the SQL language. So for SQLite, for example, we’re using a subset of SQL that is supported by SQLite. If we wanted to port our code to a different system like MySQL, it is likely we would have to change some of the syntax.</li>
+</ul>
+
+<a data-id="" id="getting-started-with-sqlite" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#getting-started-with-sqlite">Getting Started with SQLite</a></h2>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>
+    <p>It is worth noting that SQLite is not merely something we use for this class, but a database used in plenty of other applications including phones, desktop applications and websites.</p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Now, consider a database of books that have been longlisted for the <a href="https://en.wikipedia.org/wiki/International_Booker_Prize#:~:text=Its%20aim%20is%20to%20encourage,the%20winner%20announced%20in%20May.">International Booker Prize</a>. Each year, there are 13 books on the longlist and our database contains 5 years’ worth of such longlists.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Before we begin interacting with this database:
+    <ul class="fa-ul">
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Log in to <a href="https://cs50.dev/">Visual Studio Code for CS50</a>. This is where we will write code and edit files.</li>
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>The SQLite environment is already set up in your Codespace! Open it up on the terminal.</li>
+    </ul>
+  </li>
+</ul>
+
+<a data-id="" id="terminal-tips" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#terminal-tips">Terminal Tips</a></h2>
+<p>Here are some useful tips for writing SQL code on the terminal.</p>
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To clear the terminal screen, hit Ctrl + L.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To get the previously executed instruction(s) on the terminal, press the Up Arrow key.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>If your SQL query is too long and wrapping around the terminal, you can hit enter and continue writing the query on the next line.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To exit a database or the SQLite environment, use <code class="language-plaintext highlighter-rouge">.quit</code>.</li>
+</ul>
+
+<!-- ### Set-up
+1. Open VSCode.
+2. In the VSCode terminal, type `ls`.
+3. You should see the database `longlist.db`, containing the books that have been longlisted for the International Booker Prize.
+4. Type `sqlite3 longlist.db` to open the database in SQLite 3 (the third version of the software).
+5. To confirm that you are now in the SQLite environment, check that the `$` sign no more appears on the terminal, instead of which you should see `sqlite`.
+6. If you want to clear your terminal now, you may use Ctrl+L to do so. -->
+
+<a data-id="" id="select" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#select"><code class="language-plaintext highlighter-rouge">SELECT</code></a></h2>
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>What data is actually in our database? To answer this, we will use our first SQL keyword, <code class="language-plaintext highlighter-rouge">SELECT</code>, which allows us to select some (or all) rows from a table inside the database.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>In the SQLite environment, run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p>This selects all the rows from the table called <code class="language-plaintext highlighter-rouge">longlist</code>.</p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>The output we get contains all the columns of all the rows in this table, which is a lot of data. We can simplify it by selecting a particular column, say the title, from the table. Let’s try
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Now, we see a list of the titles in this table. But what if we want to see titles and authors in our search results? For this, we run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"author"</span> 
+<span class="k">FROM</span> <span class="n">longlist</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<a data-id="" id="questions-1" style="top: 0px;"></a><h3><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#questions-1">Questions</a></h3>
+
+<blockquote>
+  <p>Is it necessary to use the double quotes (“) around table and column names?</p>
+</blockquote>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>It is good practice to use double quotes around table and column names, which are called SQL identifiers. SQL also has strings and we use single quotes around strings to differentiate them from identifiers.</li>
+</ul>
+
+<blockquote>
+  <p>Where is the data in this database coming from?</p>
+</blockquote>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>This database contains data from various sources.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Longlists of books (years 2018—2023) come from the <a href="https://thebookerprizes.com/the-booker-library/features/full-list-of-international-booker-prize-winners-shortlisted-authors-and-their-books">Booker Prize</a> website.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Ratings and other information about these books come from <a href="https://www.goodreads.com/">Goodreads</a>.</li>
+</ul>
+
+<blockquote>
+  <p>How do we know what tables and columns are in a database?</p>
+</blockquote>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>The database schema contains the structure of the database, including table and column names. Later in this course, we will learn how to get the database schema and understand it.</li>
+</ul>
+
+<blockquote>
+  <p>Is SQLite 3 case-sensitive? Why are some parts of the query in capital letters and some in small letters?</p>
+</blockquote>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>SQLite is case-insensitive. However, we do follow some style conventions. Observe this query:
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p>SQL keywords are written in capital letters. This is especially useful in improving the readability of longer queries. Table and column names are in lowercase.</p>
+  </li>
+</ul>
+
+<a data-id="" id="limit" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#limit"><code class="language-plaintext highlighter-rouge">LIMIT</code></a></h2>
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>
+    <p>If a database had millions of rows, it might not make sense to select all of its rows. Instead, we might want to merely take a peek at the data it contains. We use the SQL keyword <code class="language-plaintext highlighter-rouge">LIMIT</code> to specify the number of rows in the query output.</p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p>This query gives us the first 10 titles in the database. The titles are ordered the same way in the output of this query as they are in the database.</p>
+  </li>
+</ul>
+
+<a data-id="" id="where" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#where"><code class="language-plaintext highlighter-rouge">WHERE</code></a></h2>
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>The keyword <code class="language-plaintext highlighter-rouge">WHERE</code> is used to select rows based on a condition; it will output the rows for which the specified condition is true.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"author"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"year"</span> <span class="o">=</span> <span class="mi">2023</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p>This gives us the titles and authors for the books longlisted in 2023. Note that <code class="language-plaintext highlighter-rouge">2023</code> is not in quotes because it is an integer, not a string or identifier.</p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>
+    <p>The operators that can be used to specify conditions in SQL are <code class="language-plaintext highlighter-rouge">=</code> (“equal to”), <code class="language-plaintext highlighter-rouge">!=</code> (“not equal to”) and <code class="language-plaintext highlighter-rouge">&lt;&gt;</code> (also “not equal to”).</p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the books that are not hardcovers, we can run the query
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"format"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"format"</span> <span class="o">!=</span> <span class="s1">'hardcover'</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <ul class="fa-ul">
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Note that <code class="language-plaintext highlighter-rouge">hardcover</code> is in single quotes because it is an SQL string and not an identifier.</li>
+    </ul>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><code class="language-plaintext highlighter-rouge">!=</code> can be replaced with the operator <code class="language-plaintext highlighter-rouge">&lt;&gt;</code> to get the same results. The modified query would be
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"format"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"format"</span> <span class="o">&lt;&gt;</span> <span class="s1">'hardcover'</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Yet another way to get the same results is to use the SQL keyword <code class="language-plaintext highlighter-rouge">NOT</code>. The modified query would be
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"format"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="k">NOT</span> <span class="nv">"format"</span> <span class="o">=</span> <span class="s1">'hardcover'</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To combine conditions, we can use the SQL keywords <code class="language-plaintext highlighter-rouge">AND</code> and <code class="language-plaintext highlighter-rouge">OR</code>. We can also use parentheses to indicate how to combine the conditions in a compound conditional statement.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the titles and authors of the books longlisted in 2022 or 2023
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"author"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"year"</span> <span class="o">=</span> <span class="mi">2022</span> <span class="k">OR</span> <span class="nv">"year"</span> <span class="o">=</span> <span class="mi">2023</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the books longlisted in 2022 or 2023 that were <strong>not</strong> hardcovers
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"format"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="p">(</span><span class="nv">"year"</span> <span class="o">=</span> <span class="mi">2022</span> <span class="k">OR</span> <span class="nv">"year"</span> <span class="o">=</span> <span class="mi">2023</span><span class="p">)</span> <span class="k">AND</span> <span class="nv">"format"</span> <span class="o">!=</span> <span class="s1">'hardcover'</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p>Here, the parantheses indicate that the <code class="language-plaintext highlighter-rouge">OR</code> clause should be evaluated before the <code class="language-plaintext highlighter-rouge">AND</code> clause.</p>
+  </li>
+</ul>
+
+<a data-id="" id="null" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#null"><code class="language-plaintext highlighter-rouge">NULL</code></a></h2>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>It is possible that tables may have missing data. <code class="language-plaintext highlighter-rouge">NULL</code> is a type used to indicate that certain data does not have a value, or does not exist in the table.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>For example, the books in our database have a translator along with an author. However, only some of the books have been translated to English. For other books, the translator value will be <code class="language-plaintext highlighter-rouge">NULL</code>.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Conditions used with <code class="language-plaintext highlighter-rouge">NULL</code> are <code class="language-plaintext highlighter-rouge">IS NULL</code> and <code class="language-plaintext highlighter-rouge">IS NOT NULL</code>.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the books for which translators don’t exist, we can run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"translator"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span>
+ <span class="k">WHERE</span> <span class="nv">"translator"</span> <span class="k">IS</span> <span class="k">NULL</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Let’s try the reverse: selecting the books for which translators do exist.
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"translator"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span>
+<span class="k">WHERE</span> <span class="nv">"translator"</span> <span class="k">IS</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<a data-id="" id="like" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#like"><code class="language-plaintext highlighter-rouge">LIKE</code></a></h2>
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>This keyword is used to select data that roughly matches the specified string. For example, <code class="language-plaintext highlighter-rouge">LIKE</code> could be used to select books that have a certain word or phrase in their title.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><code class="language-plaintext highlighter-rouge">LIKE</code> is combined with the operators <code class="language-plaintext highlighter-rouge">%</code> (matches any characters around a given string) and <code class="language-plaintext highlighter-rouge">_</code> (matches a single character).</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the books with the word “love” in their titles, we can run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span>
+<span class="k">FROM</span> <span class="nv">"longlist"</span>
+<span class="k">WHERE</span> <span class="nv">"title"</span> <span class="k">LIKE</span> <span class="s1">'%love%'</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p><code class="language-plaintext highlighter-rouge">%</code> matches 0 or more characters, so this query would match book titles that have 0 or more characters before and after “love” —&nbsp;that is, titles that contain “love”.</p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the books whose title begin with “The”, we can run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"title"</span> <span class="k">LIKE</span> <span class="s1">'The%'</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>The above query may also return books whose titles begin with “Their” or “They”. To select only the books whose titles begin with the <strong>word</strong> “The”, we can add a space.
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"title"</span> <span class="k">LIKE</span> <span class="s1">'The %'</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Given that there is a book in the table whose name is either “Pyre” or “Pire”, we can select it by running
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"title"</span> <span class="k">LIKE</span> <span class="s1">'P_re'</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p>This query could also return book titles like “Pore” or “Pure” if they existed in our database, because <code class="language-plaintext highlighter-rouge">_</code> matches any single character.</p>
+  </li>
+</ul>
+
+<a data-id="" id="questions-2" style="top: 0px;"></a><h3><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#questions-2">Questions</a></h3>
+<blockquote>
+  <p>Can we use multiple <code class="language-plaintext highlighter-rouge">%</code> or <code class="language-plaintext highlighter-rouge">_</code> symbols in a query?</p>
+</blockquote>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Yes, we can! Example 1: If we wanted to select books whose titles begin with “The” and have “love” somewhere in the middle, we could run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"title"</span> <span class="k">LIKE</span> <span class="s1">'The%love%'</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Note: No book from our current database matches this pattern, so this query returns nothing.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Example 2: If we knew there was a book in the table whose title begins with “T” and has four letters in it, we can try to find it by running
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"title"</span> <span class="k">LIKE</span> <span class="s1">'T____'</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<blockquote>
+  <p>Is the comparison of strings case-sensitive in SQL?</p>
+</blockquote>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>In SQLite, comparison of strings with <code class="language-plaintext highlighter-rouge">LIKE</code> is by default case-<em>in</em>sensitive, whereas comparison of strings with <code class="language-plaintext highlighter-rouge">=</code> is case-sensitive. (Note that, in other DBMS’s, the configuration of your database can change this!)</li>
+</ul>
+
+<a data-id="" id="ranges" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#ranges">Ranges</a></h2>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>We can also use the operators <code class="language-plaintext highlighter-rouge">&lt;</code>, <code class="language-plaintext highlighter-rouge">&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;=</code> and <code class="language-plaintext highlighter-rouge">&gt;=</code> in our conditions to match a range of values. For example, to select all the books longlisted between the years 2019 and 2022 (inclusive), we can run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"author"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"year"</span> <span class="o">&gt;=</span> <span class="mi">2019</span> <span class="k">AND</span> <span class="nv">"year"</span> <span class="o">&lt;=</span> <span class="mi">2022</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Another way to get the same results is using the keywords <code class="language-plaintext highlighter-rouge">BETWEEN</code> and <code class="language-plaintext highlighter-rouge">AND</code> to specify inclusive ranges. We can run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"author"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"year"</span> <span class="k">BETWEEN</span> <span class="mi">2019</span> <span class="k">AND</span> <span class="mi">2022</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the books that have a rating of 4.0 or higher, we can run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"rating"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"rating"</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To further limit the selected books by number of votes, and have only those books with at least 10,000 votes, we can run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"rating"</span><span class="p">,</span> <span class="nv">"votes"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"rating"</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">.</span><span class="mi">0</span> <span class="k">AND</span> <span class="nv">"votes"</span> <span class="o">&gt;</span> <span class="mi">10000</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the books that have less than 300 pages, we can run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"pages"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">WHERE</span> <span class="nv">"pages"</span> <span class="o">&lt;</span> <span class="mi">300</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<a data-id="" id="questions-3" style="top: 0px;"></a><h3><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#questions-3">Questions</a></h3>
+<blockquote>
+  <p>For range operators like <code class="language-plaintext highlighter-rouge">&lt;</code> and <code class="language-plaintext highlighter-rouge">&gt;</code>, do the values in the database have to be integers?</p>
+</blockquote>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>No, the values can be integers or floating-point (i.e., “decimal” or “real”) numbers. While creating a database, there are ways to set these data types for columns.</li>
+</ul>
+
+<a data-id="" id="order-by" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#order-by"><code class="language-plaintext highlighter-rouge">ORDER BY</code></a></h2>
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword allows us to organize the returned rows in some specified order.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>The following query selects the bottom 10 books in our database by rating.
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"rating"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="nv">"rating"</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Note that we get the bottom 10 books because <code class="language-plaintext highlighter-rouge">ORDER BY</code> chooses ascending order by default.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Instead, to select the top 10 books
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"rating"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="nv">"rating"</span> <span class="k">DESC</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p>Note the use of the SQL keyword <code class="language-plaintext highlighter-rouge">DESC</code> to specify the descending order. <code class="language-plaintext highlighter-rouge">ASC</code> can be used to explicitly specify ascending order.</p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the top 10 books by rating and also include number of votes as a tie-break, we can run
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span><span class="p">,</span> <span class="nv">"rating"</span><span class="p">,</span> <span class="nv">"votes"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="nv">"rating"</span> <span class="k">DESC</span><span class="p">,</span> <span class="nv">"votes"</span> <span class="k">DESC</span> 
+<span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p>Note that for each column in the <code class="language-plaintext highlighter-rouge">ORDER BY</code> clause, we specify ascending or descending order.</p>
+  </li>
+</ul>
+
+<a data-id="" id="questions-4" style="top: 0px;"></a><h3><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#questions-4">Questions</a></h3>
+<blockquote>
+  <p>To sort books by title alphabetically, can we use <code class="language-plaintext highlighter-rouge">ORDER BY</code>?</p>
+</blockquote>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Yes, we can. The query would be
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="nv">"title"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span> 
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="nv">"title"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<a data-id="" id="aggregate-functions" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#aggregate-functions">Aggregate Functions</a></h2>
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span><code class="language-plaintext highlighter-rouge">COUNT</code>, <code class="language-plaintext highlighter-rouge">AVG</code>, <code class="language-plaintext highlighter-rouge">MIN</code>, <code class="language-plaintext highlighter-rouge">MAX</code>, and <code class="language-plaintext highlighter-rouge">SUM</code> are called aggregate functions and allow us to perform the corresponding operations over multiple rows of data. By their very nature, each of the following aggregate functions will return only a single output—the aggregated value.</li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To find the average rating of all books in the database
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">AVG</span><span class="p">(</span><span class="nv">"rating"</span><span class="p">)</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To round the average rating to 2 decimal points
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">ROUND</span><span class="p">(</span><span class="k">AVG</span><span class="p">(</span><span class="nv">"rating"</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To rename the column in which the results are displayed
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">ROUND</span><span class="p">(</span><span class="k">AVG</span><span class="p">(</span><span class="nv">"rating"</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">"average rating"</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <p>Note the use of the SQL keyword <code class="language-plaintext highlighter-rouge">AS</code> to rename columns.</p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the maximum rating in the database
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">MAX</span><span class="p">(</span><span class="nv">"rating"</span><span class="p">)</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To select the minimum rating in the database
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">MIN</span><span class="p">(</span><span class="nv">"rating"</span><span class="p">)</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To count the total number of votes in the database
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="nv">"votes"</span><span class="p">)</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To count the number of books in our database
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> 
+ <span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <ul class="fa-ul">
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>Remember that we used <code class="language-plaintext highlighter-rouge">*</code> to select every row and column from the database. In this case, we are trying to count every row in the database and hence we use the <code class="language-plaintext highlighter-rouge">*</code>.</li>
+    </ul>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To count the number of translators
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="nv">"translator"</span><span class="p">)</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+    <ul class="fa-ul">
+      <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>We observe that the number of translators is fewer than the number of rows in the database. This is because the <code class="language-plaintext highlighter-rouge">COUNT</code> function does not count <code class="language-plaintext highlighter-rouge">NULL</code> values.</li>
+    </ul>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>To count the number of publishers in the database
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="nv">"publisher"</span><span class="p">)</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>As with translators, this query will count the number of publisher values that are not <code class="language-plaintext highlighter-rouge">NULL</code>. However, this may include duplicates. Another SQL keyword, <code class="language-plaintext highlighter-rouge">DISTINCT</code>, can be used to ensure that only distinct values are counted.
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span> <span class="nv">"publisher"</span><span class="p">)</span> 
+<span class="k">FROM</span> <span class="nv">"longlist"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<a data-id="" id="questions-5" style="top: 0px;"></a><h3><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#questions-5">Questions</a></h3>
+<blockquote>
+  <p>Would using <code class="language-plaintext highlighter-rouge">MAX</code> with the title column give you the longest book title?</p>
+</blockquote>
+
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>No, using <code class="language-plaintext highlighter-rouge">MAX</code> with the title column would give you the “largest” (or in this case, last) title alphabetically. Similarly, <code class="language-plaintext highlighter-rouge">MIN</code> will give the first title alphabetically.</li>
+</ul>
+
+<a data-id="" id="fin" style="top: 0px;"></a><h2><a data-id="" href="https://cs50.harvard.edu/sql/2024/notes/0/#fin">Fin</a></h2>
+<ul class="fa-ul">
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>
+    <p>This brings us to the conclusion of Lecture 0 about Querying in SQL! To exit the SQLite prompt, you can type in the SQLite keyword <code class="language-plaintext highlighter-rouge">.quit</code> and this should take you back to the regular terminal.</p>
+  </li>
+  <li data-marker="*"><span class="fa-li"><i class="fas fa-square"></i></span>
+    <p>Until next time!</p>
+  </li>
+</ul>
+
+
+                </main>
+
+            </div>
+
+        </div>
+
+        
+ 
+        <script src="./Lecture 0 - CS50&#39;s Introduction to Databases with SQL_files/page.js.descarga"></script>
+
+    
+
+
+</body></html>
