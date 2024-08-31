@@ -1,4 +1,7 @@
 ##############################
+30/08/2024
+Root cause: the reason whay a problem occurs
+##############################
 23/08/2024
 Data and gut instinct
 Detectives and data analysts have a lot in common. Both depend on facts and clues to make decisions. Both collect and look at the evidence. Both talk to people who know part of the story. And both might even follow some footprints to see where they lead. Whether you’re a detective or a data analyst, your job is all about following steps to collect and understand facts.   
