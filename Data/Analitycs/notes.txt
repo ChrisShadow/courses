@@ -1,4 +1,122 @@
 ##############################
+03/09/2024
+Module II
+
+##############################
+03/09/2024
+Use the five whys for root cause analysis
+Recently, you’ve been learning why business solutions almost always require some data detective work. This is one way critical thinking helps data professionals determine the right questions to ask in order to arrive at those solutions. One very common question is, “What is the root cause of the problem?” A root cause is the reason why a problem occurs. So, by identifying and eliminating the root cause, data professionals can help stop that problem from occurring again. 
+
+The five whys is a simple but effective technique for identifying a root cause. It involves asking "Why?" repeatedly until the answer reveals itself. This often happens at the fifth “why,” but sometimes you’ll need to continue asking more times, sometimes fewer.
+You recently explored a case involving lacking the necessary ingredients to bake pies; now, you’ll go more in-depth with some business applications of the five whys technique to do root cause analysis.
+
+Boost customer service
+An online grocery store was receiving numerous customer service complaints about poor deliveries. To address this problem, a data analyst at the company asked their first “why?”
+
+Why #1. “Customers are complaining about poor grocery deliveries. Why?”
+
+The data analyst began by reviewing the customer feedback more closely. They noted the vast majority of complaints dealt with products arriving damaged. So, they asked “why?” again.
+
+Why #2. “Products are arriving damaged. Why?”
+
+To answer this question, the data analyst continued exploring the customer feedback. It turned out that many customers said products were not packaged properly.
+
+Why #3. “Products are not packaged properly. Why?”
+
+After asking their third “why,” the data analyst did some further detective work. They ultimately learned that their company’s grocery packers were not adequately trained on packing procedures.
+
+Why #4. “Grocery packers are not adequately trained. Why?”
+
+This “why” enabled the data analyst to uncover that nearly 35% of all packers were new to the company. They had not yet had the chance to complete all required training, yet they were already being asked to pack groceries for customer orders.
+
+Why #5. “Packers have not completed required training. Why?”
+
+This final “why?” led the data analyst to find out that the human resources department had not provided necessary training to any newly hired packers. This was because HR was in the middle of reworking the training program. Rather than training new hires using the old system, they had provided them with a quick one-page guide, which was insufficient. 
+
+So, in this example, the root cause of the problem was that HR had not completed the training program updates and was using a less-thorough guide to train new packers. Fortunately, this was a problem that the grocer could control. And thanks to the data analyst’s work, they provided more support to the HR department to complete the training and retrain all newly hired grocery packers!
+
+Advance quality control
+An irrigation company was experiencing an increase in the number of defects in their water pumps. The company's data team used the five whys to analyze the situation:
+
+Why #1. “There has been an increase in the number of defects in water pumps. Why?”
+
+To answer this question, the data team set up a meeting with shop floor engineers. They asked for some insights into machine performance and manufacturing processes. After some exploration, it was discovered that the machines used to produce the pumps were not properly calibrated.
+
+Why #2. “The machines are not properly calibrated. Why?”
+
+After more brainstorming with the engineering team, it was determined that the machines were miscalibrated during the last maintenance cycle.
+
+Why #3. “The machines were miscalibrated during maintenance. Why?”
+
+Next, the data team investigated the procedures involved with machine calibration. They found out that the current method was inappropriate for the machines.
+
+Why #4. “The calibration method is inappropriate for the machines. Why?”
+
+This “why” led them to discover that the company had recently installed new software in their machines. Because it was a minor software upgrade, the engineers didn’t realize it would affect calibration. They didn’t have the information they needed to properly calibrate the upgraded machines. 
+
+Why #5. “The engineers don’t have the information they need to calibrate the upgraded machines. Why?”
+
+The fifth and final “why” turned up even more evidence: The installation team had upgraded machine software, but had failed to share the corresponding calibration procedures with the engineers. 
+
+So, in this example, the root cause of the problem was that the engineers lacked important information about how to calibrate the machines using the new software system. The solution was found, and the irrigation company was able to implement it right away. Soon, the engineers had the necessary calibration instructions, and the pump defects were eliminated!
+
+Key takeaways
+The five whys is a powerful tool for root cause analysis. It’s simple, effective, and a great way to collaborate with colleagues and learn about other areas of the business. Plus, the five whys can be used to analyze problems in any industry, helping organizations of all kinds identify and fix business problems. As a data professional, you can turn to the five whys whenever you feel stumped by a problem and need to approach it from a different perspective. 
+
+
+So far in this program, you’ve learned about analytical skills, analytical thinking, and data-driven decision-making. Based on this knowledge, respond to the following questions:
+
+Which of your skills and ways of thinking will help you become a successful data analyst? 
+
+Why will these skills help you become a successful data analyst?
+
+Please write a response of 5-7 sentences (100-140 words). 
+
+Original
+I really think that data-driven decision-making is a strong skill that everybody in the fiel must ensure to develope it properly, not only because it helps to solve those cases which need fact in order to get a real result but also because it does strength the accuracy of taking decisions to any interested in the field. Therefore, it is also required to acquire and put into practice the curiosity in the first place so then it might be simpler to improve constanly in analitycs.
+
+By gpt
+I firmly believe that data-driven decision-making is an essential skill that everyone in the field must develop properly. Not only does it help solve cases that require factual evidence to achieve accurate results, but it also strengthens the decision-making process for anyone interested in this area. Moreover, cultivating curiosity is crucial, as it simplifies the continuous improvement needed in the field of analytics.
+
+
+Glossary terms from module 1
+Terms and definitions for Course 1, Module 1
+Analytical skills: Qualities and characteristics associated with using facts to solve problems
+
+Analytical thinking: The process of identifying and defining a problem, then solving it by using data in an organized, step-by-step manner
+
+Context: The condition in which something exists or happens
+
+Data: A collection of facts
+
+Data analysis: The collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision-making
+
+Data analyst: Someone who collects, transforms, and organizes data in order to draw conclusions, make predictions, and drive informed decision-making
+
+Data analytics: The science of data
+
+Data design: How information is organized
+
+Data-driven decision-making: Using facts to guide business strategy
+
+Data ecosystem: The various elements that interact with one another in order to produce, manage, store, organize, analyze, and share data
+
+Data science: A field of study that uses raw data to create new ways of modeling and understanding the unknown 
+
+Data strategy: The management of the people, processes, and tools used in data analysis
+
+Data visualization: The graphical representation of data
+
+Dataset: A collection of data that can be manipulated or analyzed as one unit 
+
+Gap analysis: A method for examining and evaluating the current state of a process in order to identify opportunities for improvement in the future
+
+Root cause: The reason why a problem occurs
+
+Technical mindset: The ability to break things down into smaller steps or pieces and work with them in an orderly and logical way
+
+Visualization: (Refer to data visualization) 
+##############################
 30/08/2024
 Root cause: the reason whay a problem occurs
 ##############################
