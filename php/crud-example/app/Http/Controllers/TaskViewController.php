@@ -11,8 +11,8 @@ class TaskViewController extends Controller
     use AuthorizesRequests;
     public function index()
     {
-        $tasks = auth()->user()->tasks;
-        /* $tasks = Task::all(); */
+        //$tasks = auth()->user()->tasks;
+        $tasks = Task::all();
         return view('tasks.index', compact('tasks'));
     }
 
@@ -24,16 +24,16 @@ class TaskViewController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => 'required|string|max:255',
-            'description' => 'nullable|string',
-            /* 'title' => 'required',
-            'description' => 'nullable', */
+            /*  'title' => 'required|string|max:255',
+             'description' => 'nullable|string', */
+            'title' => 'required',
+            'description' => 'nullable',
         ]);
 
         // Crea una nueva tarea y la asocia con el usuario autenticado
-        auth()->user()->tasks()->create($request->all());
+        //auth()->user()->tasks()->create($request->all());
 
-        /* Task::create($request->all()); */
+        Task::create($request->all());
 
         return redirect()->route('tasks.index')->with('success', 'Task created successfully.');
     }
@@ -41,27 +41,27 @@ class TaskViewController extends Controller
     public function show(Task $task)
     {
         // Verifica que la tarea pertenezca al usuario autenticado
-        $this->authorize('view', $task);
+        //$this->authorize('view', $task);
 
         return view('tasks.show', compact('task'));
     }
 
     public function edit(Task $task)
     {
-        $this->authorize('update', $task);
+        //$this->authorize('update', $task);
 
         return view('tasks.edit', compact('task'));
     }
 
     public function update(Request $request, Task $task)
     {
-        $this->authorize('update', $task);
+        //$this->authorize('update', $task);
 
         $request->validate([
-            'title' => 'required|string|max:255',
-            'description' => 'nullable|string',
-            /*  'title' => 'required',
-             'description' => 'nullable', */
+            /* 'title' => 'required|string|max:255',
+            'description' => 'nullable|string', */
+            'title' => 'required',
+            'description' => 'nullable',
         ]);
 
         $task->update($request->all());
@@ -71,7 +71,7 @@ class TaskViewController extends Controller
 
     public function destroy(Task $task)
     {
-        $this->authorize('delete', $task);
+        //$this->authorize('delete', $task);
 
         $task->delete();
 

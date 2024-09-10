@@ -27,12 +27,13 @@ class TaskController extends Controller
     {
 
         // Devuelve todas las tareas del usuario autenticado en formato JSON
-        return response()->json(auth()->user()->tasks);
+        //return response()->json(auth()->user()->tasks);
 
-        /* $tasks = Task::all();
-        return response()->json($tasks); */
+        $tasks = Task::all();
+        return response()->json($tasks);
     }
 
+    //@OA\Property(property="user_id", type="integer")
     /**
      * @OA\Post(
      *     path="/api/tasks/create",
@@ -41,8 +42,7 @@ class TaskController extends Controller
      *         required=true,
      *         @OA\JsonContent(
      *             @OA\Property(property="title", type="string"),
-     *             @OA\Property(property="description", type="string"),
-     *            @OA\Property(property="user_id", type="integer")
+     *             @OA\Property(property="description", type="string")
      *         )
      *     ),
      *     @OA\Response(
@@ -53,25 +53,25 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'title' => 'required|string|max:255',
-            'description' => 'nullable|string',
-            'user_id' => 'required|integer',
-        ]);
+        /*  $request->validate([
+             'title' => 'required|string|max:255',
+             'description' => 'nullable|string',
+             'user_id' => 'required|integer',
+         ]); */
 
         // Crea una nueva tarea y la asocia con el usuario autenticado
-        $task = auth()->user()->tasks()->create($request->all());
+        /*$task = auth()->user()->tasks()->create($request->all());
 
-        return response()->json($task, 201); // Devuelve la tarea creada en formato JSON
+        return response()->json($task, 201); */ // Devuelve la tarea creada en formato JSON
 
-        /* $request->validate([
+        $request->validate([
             'title' => 'required',
             'description' => 'nullable',
         ]);
 
         $task = Task::create($request->all());
 
-        return response()->json($task, 201); */
+        return response()->json($task, 201);
     }
 
     /**
@@ -90,22 +90,23 @@ class TaskController extends Controller
      *     )
      * )
      */
-    public function show(Task $task)
+    /*public function show(Task $task)
     {
         // Verifica que la tarea pertenezca al usuario autenticado
         $this->authorize('view', $task);
 
         return response()->json($task); // Devuelve la tarea en formato JSON
-    }
-    /* public function show($id)
+    }*/
+    public function show($id)
     {
         $task = Task::find($id);
         if (!$task) {
             return response()->json(['message' => 'Tarea no encontrada'], 404);
         }
         return response()->json($task);
-    } */
+    }
 
+    //@OA\Property(property="user_id", type="integer")
     /**
      * @OA\Put(
      *     path="/api/tasks/{id}/update",
@@ -120,8 +121,7 @@ class TaskController extends Controller
      *         required=true,
      *         @OA\JsonContent(
      *             @OA\Property(property="title", type="string"),
-     *             @OA\Property(property="description", type="string"),
-     *            @OA\Property(property="user_id", type="integer")
+     *             @OA\Property(property="description", type="string")
      *         )
      *     ),
      *     @OA\Response(
@@ -130,7 +130,7 @@ class TaskController extends Controller
      *     )
      * )
      */
-    public function update(Request $request, Task $task)
+    /* public function update(Request $request, Task $task)
     {
         $this->authorize('update', $task);
 
@@ -143,8 +143,8 @@ class TaskController extends Controller
         $task->update($request->all());
 
         return response()->json($task); // Devuelve la tarea actualizada en formato JSON
-    }
-    /* public function update(Request $request, $id)
+    } */
+    public function update(Request $request, $id)
     {
         $task = Task::find($id);
         if (!$task) {
@@ -159,7 +159,7 @@ class TaskController extends Controller
         $task->update($request->all());
 
         return response()->json($task);
-    } */
+    }
 
     /**
      * @OA\Delete(
@@ -177,15 +177,15 @@ class TaskController extends Controller
      *     )
      * )
      */
-    public function destroy(Task $task)
+    /* public function destroy(Task $task)
     {
         $this->authorize('delete', $task);
 
         $task->delete();
 
         return response()->json(null, 204); // Devuelve una respuesta vacía indicando que la tarea fue eliminada
-    }
-    /* public function destroy($id)
+    } */
+    public function destroy($id)
     {
         $task = Task::find($id);
         if (!$task) {
@@ -195,6 +195,6 @@ class TaskController extends Controller
         $task->delete();
 
         return response()->json(['message' => 'Tarea eliminada']);
-    } */
+    }
 }
 
