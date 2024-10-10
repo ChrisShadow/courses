@@ -1,0 +1,9 @@
+09/10/2024-Clase 4
+Exploración práctica de Azure SQL
+https://youtu.be/iZ4HyKfA0xQ
+Azure Data Studio
+
+###################################
+04/10/2024-Clase 3
+Servicios de bases de datos relacionales en Azure, implementación, conexión,consultas y herramientas
+https://youtu.be/Vhs1-YWDw9I?list=PLsm1lXcPVp2tIJYUks7Thudv2bGywu6d6
