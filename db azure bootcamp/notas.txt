@@ -1,3 +1,22 @@
+
+
+###################################
+28/10/2024
+Fundamentos de analítica de datos moderna a gran escala y en tiempo real
+https://youtu.be/NpKFV3JSr5E
+
+###################################
+28/10/2024
+Almacenamiento escalable de datos no relacionales con Azure Cosmos DB
+https://youtu.be/IFcSI8sERrE
+
+###################################
+17/10/2024-Clase 5
+Almacenamiento de datos no relacionales con Azure Storage
+https://youtu.be/TwJuYu9MVxs
+blob: bynary large objets
+
+###################################
 09/10/2024-Clase 4
 Exploración práctica de Azure SQL
 https://youtu.be/iZ4HyKfA0xQ
