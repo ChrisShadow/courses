@@ -1,20 +1,47 @@
+
+
 ###################################
+15/11/2024
+Buenas prácticas de implementación, administración y seguridad en bases de datosen la nube
+zoom
+
+
+###################################
+13/11/2024-Clase 12
+Migración de datos: De on-premises a la nube
+zoom
+
+
+###################################
+08/11/2024-Clase 11
+Fundamentos de visualización de datos interactiva con Power BI
+zoom
+
+###################################
+06/11/2024-Clase 10
+Exploración de analítica de datos en tiempo real con Apache Spark y Synapse
+zoom
+
+
+
+###################################
+01/11/2024-Clase 9
 Parte 2: Exploración de analítica de datos con Azure Synapse, Data Lake, HD
 Zoom
 
 ###################################
-30/10/2024
+30/10/2024-Clase 8
 Exploración de analítica de datos con Azure Synapse, Data Lake, HD Insighty Databricks
 https://youtu.be/oVBISaqgqPM
 
 
 ###################################
-28/10/2024
+28/10/2024-Clase 7
 Fundamentos de analítica de datos moderna a gran escala y en tiempo real
 https://youtu.be/NpKFV3JSr5E
 
 ###################################
-28/10/2024
+28/10/2024-Clase 6
 Almacenamiento escalable de datos no relacionales con Azure Cosmos DB
 https://youtu.be/IFcSI8sERrE
 

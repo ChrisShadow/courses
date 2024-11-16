@@ -1,7 +1,44 @@
+##############################
+19/11/2024
+Asesoría 2-Ciencia de Datos Azure
 
+
+##############################
+Clase7
+Experimentación con Azure Machine Learning: AutoML, Jupyter, MLflow y más
+
+
+
+12/11/2024
+Asesoría 2 - Ciencia de Datos Azure
+https://www.youtube.com/live/3ps0oy2T0rU
+
+##############################
+
+
+05/11/2024
+Clase6
+Datos y destinos de proceso en Azure Machine learning
+Clase Completa - Trabajo con Entornos en Azure Machine Learning
+
+
+Clase5
+Exploración de las herramientas de desarrollo para la interacción de áreas de trabajo
+
+
+Asesoría 1 - Ciencia de Datos Azure
+https://youtu.be/FdtoiM6tmk4
+
+
+
+##############################
 29/10/2024
+Clase 3
+Exploración de recursos del área de trabajo de Azure Machine Learning
+
 Clase2
 Clase Completa - Introducción a Azure y sus soluciones para Data e IA
+
 
 
 Clase 1
