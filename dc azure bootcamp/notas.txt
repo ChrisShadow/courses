@@ -1,4 +1,20 @@
 ##############################
+27/12/2024
+Trabajo con Entornos en Azure Machine Learning
+AutoML, Jupyter, MLflow y más
+Asesoría 3 - Ciencia de Datos Azure
+Entrenamiento de Modelos con Scripts
+Optimización del Entrenamiento de Modelos
+Introducción - Asesoría 4
+Implementación de un Modelo en un punto de Conexión en Línea Administrado
+Implementación de un Modelo en un punto de Conexión por Lotes
+Asesoría 5 - Ciencia de Datos Azure
+Tips y recomendaciones para la certificación
+Simulación de examen - Ciencia de Datos Azure
+
+
+
+##############################
 19/11/2024
 Asesoría 2-Ciencia de Datos Azure
 
